@@ -46,7 +46,7 @@
       "jsr:@std/semver@^0.224.3": "jsr:@std/semver@0.224.3",
       "jsr:@std/streams@^1.0.2": "jsr:@std/streams@1.0.2",
       "jsr:@supabase/supabase-js@2.45.1": "jsr:@supabase/supabase-js@2.45.1",
-      "npm:@algolia/client-search": "npm:@algolia/client-search@4.23.3",
+      "npm:@algolia/client-search": "npm:@algolia/client-search@5.1.1",
       "npm:@algolia/requester-fetch@4.20.0": "npm:@algolia/requester-fetch@4.20.0",
       "npm:@algolia/transporter@4.20.0": "npm:@algolia/transporter@4.20.0",
       "npm:@bokuweb/zstd-wasm@0.0.20": "npm:@bokuweb/zstd-wasm@0.0.20",
@@ -71,7 +71,7 @@
       "npm:@supabase/storage-js@2.6.0": "npm:@supabase/storage-js@2.6.0",
       "npm:@swc/wasm-web@1.5.25": "npm:@swc/wasm-web@1.5.25",
       "npm:autoprefixer@10.4.14": "npm:autoprefixer@10.4.14_postcss@8.4.27",
-      "npm:colorjs.io": "npm:colorjs.io@0.5.0",
+      "npm:colorjs.io": "npm:colorjs.io@0.5.2",
       "npm:cssnano@6.0.1": "npm:cssnano@6.0.1_postcss@8.4.27",
       "npm:daisyui@4.4.19": "npm:daisyui@4.4.19_postcss@8.4.27",
       "npm:fuse.js@7.0.0": "npm:fuse.js@7.0.0",
@@ -81,7 +81,7 @@
       "npm:preact@10.23.1": "npm:preact@10.23.1",
       "npm:search-insights@2.9.0": "npm:search-insights@2.9.0",
       "npm:tailwindcss@3.4.1": "npm:tailwindcss@3.4.1_postcss@8.4.27",
-      "npm:typesense@1.7.1": "npm:typesense@1.7.1_@babel+runtime@7.24.7",
+      "npm:typesense@1.7.1": "npm:typesense@1.7.1_@babel+runtime@7.25.0",
       "npm:ua-parser-js@2.0.0-beta.2": "npm:ua-parser-js@2.0.0-beta.2",
       "npm:unique-names-generator@4.7.1": "npm:unique-names-generator@4.7.1",
       "npm:weak-lru-cache@1.0.0": "npm:weak-lru-cache@1.0.0"
@@ -275,45 +275,42 @@
         "integrity": "sha512-vCfxauaZutL3NImzB2G9LjLt36vKAckc6DhMp05An14kVo8F1Yofb6SIl6U3SaEz8pG2QOB9ptwM5c+zGevwIQ==",
         "dependencies": {}
       },
-      "@algolia/cache-common@4.23.3": {
-        "integrity": "sha512-h9XcNI6lxYStaw32pHpB1TMm0RuxphF+Ik4o7tcQiodEdpKK+wKufY6QXtba7t3k8eseirEMVB83uFFF3Nu54A==",
+      "@algolia/client-common@5.1.1": {
+        "integrity": "sha512-jkQNQbGY+XQB3Eln7wqqdUZKBzG8lETcsaUk5gcMc6iIwyN/qW0v0fhpKPH+Kli+BImLxo0CWk12CvVvx2exWA==",
         "dependencies": {}
       },
-      "@algolia/client-common@4.23.3": {
-        "integrity": "sha512-l6EiPxdAlg8CYhroqS5ybfIczsGUIAC47slLPOMDeKSVXYG1n0qGiz4RjAHLw2aD0xzh2EXZ7aRguPfz7UKDKw==",
+      "@algolia/client-search@5.1.1": {
+        "integrity": "sha512-SFpb3FI/VouGou/vpuS7qeCA5Y/KpV42P6CEA/1MZQtl/xJkl6PVjikb+Q9YadeHi2jtDV/aQ6PyiVDnX4PQcw==",
         "dependencies": {
-          "@algolia/requester-common": "@algolia/requester-common@4.23.3",
-          "@algolia/transporter": "@algolia/transporter@4.23.3"
-        }
-      },
-      "@algolia/client-search@4.23.3": {
-        "integrity": "sha512-P4VAKFHqU0wx9O+q29Q8YVuaowaZ5EM77rxfmGnkHUJggh28useXQdopokgwMeYw2XUht49WX5RcTQ40rZIabw==",
-        "dependencies": {
-          "@algolia/client-common": "@algolia/client-common@4.23.3",
-          "@algolia/requester-common": "@algolia/requester-common@4.23.3",
-          "@algolia/transporter": "@algolia/transporter@4.23.3"
+          "@algolia/client-common": "@algolia/client-common@5.1.1",
+          "@algolia/requester-browser-xhr": "@algolia/requester-browser-xhr@5.1.1",
+          "@algolia/requester-node-http": "@algolia/requester-node-http@5.1.1"
         }
       },
       "@algolia/logger-common@4.20.0": {
         "integrity": "sha512-xouigCMB5WJYEwvoWW5XDv7Z9f0A8VoXJc3VKwlHJw/je+3p2RcDXfksLI4G4lIVncFUYMZx30tP/rsdlvvzHQ==",
         "dependencies": {}
       },
-      "@algolia/logger-common@4.23.3": {
-        "integrity": "sha512-y9kBtmJwiZ9ZZ+1Ek66P0M68mHQzKRxkW5kAAXYN/rdzgDN0d2COsViEFufxJ0pb45K4FRcfC7+33YB4BLrZ+g==",
-        "dependencies": {}
+      "@algolia/requester-browser-xhr@5.1.1": {
+        "integrity": "sha512-NXmN1ujJCj5GlJQaMK6DbdiXdcf6nhRef/X40lu9TYi71q9xTo/5RPMI0K2iOp6g07S26BrXFOz6RSV3Ny4LLw==",
+        "dependencies": {
+          "@algolia/client-common": "@algolia/client-common@5.1.1"
+        }
       },
       "@algolia/requester-common@4.20.0": {
         "integrity": "sha512-9h6ye6RY/BkfmeJp7Z8gyyeMrmmWsMOCRBXQDs4mZKKsyVlfIVICpcSibbeYcuUdurLhIlrOUkH3rQEgZzonng==",
-        "dependencies": {}
-      },
-      "@algolia/requester-common@4.23.3": {
-        "integrity": "sha512-xloIdr/bedtYEGcXCiF2muajyvRhwop4cMZo+K2qzNht0CMzlRkm8YsDdj5IaBhshqfgmBb3rTg4sL4/PpvLYw==",
         "dependencies": {}
       },
       "@algolia/requester-fetch@4.20.0": {
         "integrity": "sha512-VVWlS/vIGBEFomjCig0lyY4kUVEHH2mj1PJlNOC9VSyLbJ7/fIxslFChq6kEh2RUqGs4ju6h5kdS+Mis9D2Vxg==",
         "dependencies": {
           "@algolia/requester-common": "@algolia/requester-common@4.20.0"
+        }
+      },
+      "@algolia/requester-node-http@5.1.1": {
+        "integrity": "sha512-xwrgnNTIzgxDEx6zuCKSKTPzQLA8fL/WZiVB6fRpIu5agLMjoAi0cWA5YSDbo+2FFxqVgLqKY/Jz6mKmWtY15Q==",
+        "dependencies": {
+          "@algolia/client-common": "@algolia/client-common@5.1.1"
         }
       },
       "@algolia/transporter@4.20.0": {
@@ -324,20 +321,12 @@
           "@algolia/requester-common": "@algolia/requester-common@4.20.0"
         }
       },
-      "@algolia/transporter@4.23.3": {
-        "integrity": "sha512-Wjl5gttqnf/gQKJA+dafnD0Y6Yw97yvfY8R9h0dQltX1GXTgNs1zWgvtWW0tHl1EgMdhAyw189uWiZMnL3QebQ==",
-        "dependencies": {
-          "@algolia/cache-common": "@algolia/cache-common@4.23.3",
-          "@algolia/logger-common": "@algolia/logger-common@4.23.3",
-          "@algolia/requester-common": "@algolia/requester-common@4.23.3"
-        }
-      },
       "@alloc/quick-lru@5.2.0": {
         "integrity": "sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==",
         "dependencies": {}
       },
-      "@babel/runtime@7.24.7": {
-        "integrity": "sha512-UwgBRMjJP+xv857DCngvqXI3Iq6J4v0wXmwc6sapg+zyhbwmQX67LUEFrkK5tbyJ30jGuG3ZvWpBiB9LCy1kWw==",
+      "@babel/runtime@7.25.0": {
+        "integrity": "sha512-7dRy4DwXwtzBrPbZflqxnvfxLF8kdZXPkhymtDeFoFqE6ldzjQFgYTtYIFARcLEYDrqfBfYcZt1WqFxRoyC9Rw==",
         "dependencies": {
           "regenerator-runtime": "regenerator-runtime@0.14.1"
         }
@@ -498,7 +487,7 @@
           "@opentelemetry/sdk-logs": "@opentelemetry/sdk-logs@0.52.1_@opentelemetry+api@1.9.0",
           "@opentelemetry/sdk-metrics": "@opentelemetry/sdk-metrics@1.25.1_@opentelemetry+api@1.9.0",
           "@opentelemetry/sdk-trace-base": "@opentelemetry/sdk-trace-base@1.25.1_@opentelemetry+api@1.9.0",
-          "protobufjs": "protobufjs@7.3.2"
+          "protobufjs": "protobufjs@7.3.3"
         }
       },
       "@opentelemetry/propagator-b3@1.25.1_@opentelemetry+api@1.9.0": {
@@ -776,7 +765,7 @@
         "integrity": "sha512-btwCFJVjI4YWDNfau8RhZ+B1Q/VLoUITrm3RlP6y1tYGWIOa+InuYiRGXUBXo8nA1qKmHMyLB/iVQg5TT4eFoA==",
         "dependencies": {
           "caniuse-lite": "caniuse-lite@1.0.30001651",
-          "electron-to-chromium": "electron-to-chromium@1.5.6",
+          "electron-to-chromium": "electron-to-chromium@1.5.13",
           "node-releases": "node-releases@2.0.18",
           "update-browserslist-db": "update-browserslist-db@1.1.0_browserslist@4.23.3"
         }
@@ -829,8 +818,8 @@
         "integrity": "sha512-jeC1axXpnb0/2nn/Y1LPuLdgXBLH7aDcHu4KEKfqw3CUhX7ZpfBSlPKyqXE6btIgEzfWtrX3/tyBCaCvXvMkOw==",
         "dependencies": {}
       },
-      "colorjs.io@0.5.0": {
-        "integrity": "sha512-qekjTiBLM3F/sXKks/ih5aWaHIGu+Ftel0yKEvmpbKvmxpNOhojKgha5uiWEUOqEpRjC1Tq3nJRT7WgdBOxIGg==",
+      "colorjs.io@0.5.2": {
+        "integrity": "sha512-twmVoizEW7ylZSN32OgKdXRmo1qg+wT5/6C3xu5b9QsWzSFAhHLn2xd8ro0diCsKfCj1RdaTP/nrcW+vAoQPIw==",
         "dependencies": {}
       },
       "commander@4.1.1": {
@@ -1007,8 +996,8 @@
         "integrity": "sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==",
         "dependencies": {}
       },
-      "electron-to-chromium@1.5.6": {
-        "integrity": "sha512-jwXWsM5RPf6j9dPYzaorcBSUg6AiqocPEyMpkchkvntaH9HGfOOMZwxMJjDY/XEs3T5dM7uyH1VhRMkqUU9qVw==",
+      "electron-to-chromium@1.5.13": {
+        "integrity": "sha512-lbBcvtIJ4J6sS4tb5TLp1b4LyfCdMkwStzXPyAgVgTRAsep4bvrAGaBOP7ZJtQMNJpSQ9SqG4brWOroNaQtm7Q==",
         "dependencies": {}
       },
       "emoji-regex@8.0.0": {
@@ -1124,8 +1113,8 @@
           "binary-extensions": "binary-extensions@2.3.0"
         }
       },
-      "is-core-module@2.15.0": {
-        "integrity": "sha512-Dd+Lb2/zvk9SKy1TGCt1wFJFo/MWBPMX5x7KcvLajWTGuomczdQX61PvY5yK6SVACwpoexWo81IfFyoKY2QnTA==",
+      "is-core-module@2.15.1": {
+        "integrity": "sha512-z0vtXSwucUJtANQWldhbtbt7BnL0vxiFjIdDLAatwhDYty2bad6s+rijD6Ri4YuYJubLzIJLUidCh09e1djEVQ==",
         "dependencies": {
           "hasown": "hasown@2.0.2"
         }
@@ -1583,8 +1572,8 @@
         "integrity": "sha512-WuxUnVtlWL1OfZFQFuqvnvs6MiAGk9UNsBostyBOB0Is9wb5uRESevA6rnl/rkksXaGX3GzZhPup5d6Vp1nFew==",
         "dependencies": {}
       },
-      "protobufjs@7.3.2": {
-        "integrity": "sha512-RXyHaACeqXeqAKGLDl68rQKbmObRsTIn4TYVUUug1KfS47YWCo5MacGITEryugIgZqORCvJWEk4l449POg5Txg==",
+      "protobufjs@7.3.3": {
+        "integrity": "sha512-HaYi2CVjiPoBR1d2zTVKVHXr9IUnpJizCjUu19vxdD3B8o4z+vfOHpIEB1358w8nv8dfUNEfDHFvMsH7QlLt/Q==",
         "dependencies": {
           "@protobufjs/aspromise": "@protobufjs/aspromise@1.1.2",
           "@protobufjs/base64": "@protobufjs/base64@1.1.2",
@@ -1631,7 +1620,7 @@
       "resolve@1.22.8": {
         "integrity": "sha512-oKWePCxqpd6FlLvGV1VU0x7bkPmmCNolxzjMf4NczoDnQcIWrAF+cPtZn5i6n+RfD2d9i0tzpKnG6Yk168yIyw==",
         "dependencies": {
-          "is-core-module": "is-core-module@2.15.0",
+          "is-core-module": "is-core-module@2.15.1",
           "path-parse": "path-parse@1.0.7",
           "supports-preserve-symlinks-flag": "supports-preserve-symlinks-flag@1.0.0"
         }
@@ -1793,10 +1782,10 @@
         "integrity": "sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==",
         "dependencies": {}
       },
-      "typesense@1.7.1_@babel+runtime@7.24.7": {
+      "typesense@1.7.1_@babel+runtime@7.25.0": {
         "integrity": "sha512-RVtwprXDyU8MfAtLZ3PyH9WWRpEFGwij5BTu9I3VBjPIWtIvM/hbi2ogL/UK9dPXFECaxY8HlHrZz9djhJDZtg==",
         "dependencies": {
-          "@babel/runtime": "@babel/runtime@7.24.7",
+          "@babel/runtime": "@babel/runtime@7.25.0",
           "axios": "axios@0.26.1",
           "loglevel": "loglevel@1.9.1"
         }
