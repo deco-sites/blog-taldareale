@@ -146,9 +146,9 @@ export default function Footer({
                 <button
                   type="submit"
                   class="btn btn-outline font-normal"
-                  aria-label="Inscreva-se"
+                  aria-label="Subscribe"
                 >
-                  Subscribe
+                  Inscreva-se
                 </button>
               </div>
               {subscribe.instructions && (
