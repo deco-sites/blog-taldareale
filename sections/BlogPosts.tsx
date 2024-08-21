@@ -81,7 +81,7 @@ export default function BlogPosts({
         <div class="gap-8 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
           {posts?.slice(from, to).map((post) => (
             <a
-              href={`/blog/${post.slug}`}
+              href={`/${post.slug}`}
               class="border border-secondary overflow-hidden rounded-lg"
             >
               <Image
@@ -104,7 +104,9 @@ export default function BlogPosts({
                 </div>
                 <div class="flex flex-wrap gap-2">
                   {post.categories?.map((category) => (
-                    <div class="badge badge-lg badge-primary text-xs">
+                    <div 
+                      href={`/${post.slug}`}
+                      class="badge badge-lg badge-primary text-xs">
                       {category.name}
                     </div>
                   ))}
