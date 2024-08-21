@@ -140,13 +140,13 @@ export default function Footer({
               <div class="flex gap-4">
                 <input
                   type="text"
-                  placeholder="Enter your email"
+                  placeholder="Insira seu email"
                   class="flex-auto input input-bordered input-primary"
                 />
                 <button
                   type="submit"
                   class="btn btn-outline font-normal"
-                  aria-label="Subscribe"
+                  aria-label="Inscreva-se"
                 >
                   Subscribe
                 </button>
