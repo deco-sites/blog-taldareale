@@ -29,8 +29,8 @@ const DEFAULT_PROPS: BlogPost = {
   excerpt: "Excerpt goes here",
   authors: [
     {
-      name: "Full name",
-      email: "author@deco.cx",
+      name: "Rafael Silva",
+      email: "contato@taldarealeza.com",
       avatar: DEFAULT_AVATAR,
     },
   ],
@@ -104,23 +104,6 @@ export default function BlogPost({ page }: Props) {
       >
       </div>
       <div class="flex flex-col gap-10 max-w-3xl w-full mx-auto">
-        <div class="space-y-4">
-          <p class="text-lg font-bold">Share this post</p>
-          <div class="flex flex-col gap-8 md:flex-row justify-between">
-            <SocialIcons />
-            <div class="flex gap-2 text-white text-xs">
-              <p class="flex items-center bg-zinc-700 py-2 px-4 rounded-full">
-                Tag #1
-              </p>
-              <p class="flex items-center bg-zinc-700 py-2 px-4 rounded-full">
-                Tag #2
-              </p>
-              <p class="flex items-center bg-zinc-700 py-2 px-4 rounded-full">
-                Tag #3
-              </p>
-            </div>
-          </div>
-        </div>
         {/* divider zinc-300 */}
         <div class="w-full h-px bg-zinc-300"></div>
         <div className="flex items-center gap-4">

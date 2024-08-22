@@ -7,7 +7,7 @@
       "jsr:@deco/durable@^0.5.3": "jsr:@deco/durable@0.5.3",
       "jsr:@deco/inspect-vscode@0.2.1": "jsr:@deco/inspect-vscode@0.2.1",
       "jsr:@deno/cache-dir@0.10.1": "jsr:@deno/cache-dir@0.10.1",
-      "jsr:@hono/hono@^4.5.4": "jsr:@hono/hono@4.5.7",
+      "jsr:@hono/hono@^4.5.4": "jsr:@hono/hono@4.5.8",
       "jsr:@luca/esbuild-deno-loader@0.10.3": "jsr:@luca/esbuild-deno-loader@0.10.3",
       "jsr:@std/assert@^0.213.1": "jsr:@std/assert@0.213.1",
       "jsr:@std/assert@^0.223.0": "jsr:@std/assert@0.223.0",
@@ -81,7 +81,7 @@
       "npm:preact@10.23.1": "npm:preact@10.23.1",
       "npm:search-insights@2.9.0": "npm:search-insights@2.9.0",
       "npm:tailwindcss@3.4.1": "npm:tailwindcss@3.4.1_postcss@8.4.27",
-      "npm:typesense@1.7.1": "npm:typesense@1.7.1_@babel+runtime@7.25.0",
+      "npm:typesense@1.7.1": "npm:typesense@1.7.1_@babel+runtime@7.25.4",
       "npm:ua-parser-js@2.0.0-beta.2": "npm:ua-parser-js@2.0.0-beta.2",
       "npm:unique-names-generator@4.7.1": "npm:unique-names-generator@4.7.1",
       "npm:weak-lru-cache@1.0.0": "npm:weak-lru-cache@1.0.0"
@@ -112,8 +112,8 @@
           "jsr:@std/path@^0.223"
         ]
       },
-      "@hono/hono@4.5.7": {
-        "integrity": "c569220a4c13575b7bc98cb62742d0fd97d89fb80a3a4a29929ff1ea190765c4"
+      "@hono/hono@4.5.8": {
+        "integrity": "60f5b4c61edae2016022d6087b4fc381f378d337f046f56e00a3a3512c7e9c16"
       },
       "@luca/esbuild-deno-loader@0.10.3": {
         "integrity": "32fc93f7e7f78060234fd5929a740668aab1c742b808c6048b57f9aaea514921",
@@ -325,8 +325,8 @@
         "integrity": "sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==",
         "dependencies": {}
       },
-      "@babel/runtime@7.25.0": {
-        "integrity": "sha512-7dRy4DwXwtzBrPbZflqxnvfxLF8kdZXPkhymtDeFoFqE6ldzjQFgYTtYIFARcLEYDrqfBfYcZt1WqFxRoyC9Rw==",
+      "@babel/runtime@7.25.4": {
+        "integrity": "sha512-DSgLeL/FNcpXuzav5wfYvHCGvynXkJbn3Zvc3823AEe9nPwW9IK4UoCSS5yGymmQzN0pCPvivtgS6/8U2kkm1w==",
         "dependencies": {
           "regenerator-runtime": "regenerator-runtime@0.14.1"
         }
@@ -1782,10 +1782,10 @@
         "integrity": "sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==",
         "dependencies": {}
       },
-      "typesense@1.7.1_@babel+runtime@7.25.0": {
+      "typesense@1.7.1_@babel+runtime@7.25.4": {
         "integrity": "sha512-RVtwprXDyU8MfAtLZ3PyH9WWRpEFGwij5BTu9I3VBjPIWtIvM/hbi2ogL/UK9dPXFECaxY8HlHrZz9djhJDZtg==",
         "dependencies": {
-          "@babel/runtime": "@babel/runtime@7.25.0",
+          "@babel/runtime": "@babel/runtime@7.25.4",
           "axios": "axios@0.26.1",
           "loglevel": "loglevel@1.9.1"
         }
