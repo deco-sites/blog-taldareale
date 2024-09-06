@@ -44,7 +44,7 @@ function Container({ children }: { children: ComponentChildren }) {
 }
 
 export default function BlogPosts({
-  cta = { text: "Show more" },
+  cta = { text: "Mostre mais" },
   posts,
   pagination: {
     page = 0,
@@ -114,9 +114,9 @@ export default function BlogPosts({
                 <div class="flex flex-wrap gap-2">
                   <span>
                     {post.date
-                      ? new Date(post.date).toLocaleDateString("en-US", {
-                        month: "long",
+                      ? new Date(post.date).toLocaleDateString("pt-BR", {
                         day: "numeric",
+                        month: "long",
                         year: "numeric",
                       })
                       : ""}
