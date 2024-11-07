@@ -7,7 +7,7 @@
       "jsr:@deco/durable@^0.5.3": "jsr:@deco/durable@0.5.3",
       "jsr:@deco/inspect-vscode@0.2.1": "jsr:@deco/inspect-vscode@0.2.1",
       "jsr:@deno/cache-dir@0.10.1": "jsr:@deno/cache-dir@0.10.1",
-      "jsr:@hono/hono@^4.5.4": "jsr:@hono/hono@4.6.7",
+      "jsr:@hono/hono@^4.5.4": "jsr:@hono/hono@4.6.9",
       "jsr:@luca/esbuild-deno-loader@0.10.3": "jsr:@luca/esbuild-deno-loader@0.10.3",
       "jsr:@std/assert@^0.213.1": "jsr:@std/assert@0.213.1",
       "jsr:@std/assert@^0.223.0": "jsr:@std/assert@0.223.0",
@@ -15,7 +15,7 @@
       "jsr:@std/assert@^0.226.0": "jsr:@std/assert@0.226.0",
       "jsr:@std/async@^0.224.1": "jsr:@std/async@0.224.2",
       "jsr:@std/bytes@^0.223.0": "jsr:@std/bytes@0.223.0",
-      "jsr:@std/bytes@^1.0.2": "jsr:@std/bytes@1.0.2",
+      "jsr:@std/bytes@^1.0.2": "jsr:@std/bytes@1.0.3",
       "jsr:@std/cli@^1.0.6": "jsr:@std/cli@1.0.6",
       "jsr:@std/crypto@1.0.0-rc.1": "jsr:@std/crypto@1.0.0-rc.1",
       "jsr:@std/encoding@0.213": "jsr:@std/encoding@0.213.1",
@@ -42,12 +42,12 @@
       "jsr:@std/path@1.0.0-rc.1": "jsr:@std/path@1.0.0-rc.1",
       "jsr:@std/path@^0.223": "jsr:@std/path@0.223.0",
       "jsr:@std/path@^0.225.2": "jsr:@std/path@0.225.2",
-      "jsr:@std/path@^1.0.2": "jsr:@std/path@1.0.7",
-      "jsr:@std/path@^1.0.7": "jsr:@std/path@1.0.7",
+      "jsr:@std/path@^1.0.2": "jsr:@std/path@1.0.8",
+      "jsr:@std/path@^1.0.7": "jsr:@std/path@1.0.8",
       "jsr:@std/semver@^0.224.3": "jsr:@std/semver@0.224.3",
-      "jsr:@std/streams@^1.0.7": "jsr:@std/streams@1.0.7",
+      "jsr:@std/streams@^1.0.7": "jsr:@std/streams@1.0.8",
       "jsr:@supabase/supabase-js@2.45.1": "jsr:@supabase/supabase-js@2.45.1",
-      "npm:@algolia/client-search": "npm:@algolia/client-search@5.10.2",
+      "npm:@algolia/client-search": "npm:@algolia/client-search@5.13.0",
       "npm:@algolia/requester-fetch@4.20.0": "npm:@algolia/requester-fetch@4.20.0",
       "npm:@algolia/transporter@4.20.0": "npm:@algolia/transporter@4.20.0",
       "npm:@bokuweb/zstd-wasm@0.0.20": "npm:@bokuweb/zstd-wasm@0.0.20",
@@ -113,8 +113,8 @@
           "jsr:@std/path@^0.223"
         ]
       },
-      "@hono/hono@4.6.7": {
-        "integrity": "0f26a88942571a8eefea5ff7254691f6961fa2cc24fb777f8cdee282bb62c364"
+      "@hono/hono@4.6.9": {
+        "integrity": "4d4975f5c023d4416d26e6dd4a498c56e59958561733f56f55a9be57f023603b"
       },
       "@luca/esbuild-deno-loader@0.10.3": {
         "integrity": "32fc93f7e7f78060234fd5929a740668aab1c742b808c6048b57f9aaea514921",
@@ -142,8 +142,8 @@
       "@std/bytes@0.223.0": {
         "integrity": "84b75052cd8680942c397c2631318772b295019098f40aac5c36cead4cba51a8"
       },
-      "@std/bytes@1.0.2": {
-        "integrity": "fbdee322bbd8c599a6af186a1603b3355e59a5fb1baa139f8f4c3c9a1b3e3d57"
+      "@std/bytes@1.0.3": {
+        "integrity": "e5d5b9e685966314e4edb4be60dfc4bd7624a075bfd4ec8109252b4320f76452"
       },
       "@std/cli@1.0.6": {
         "integrity": "d22d8b38c66c666d7ad1f2a66c5b122da1704f985d3c47f01129f05abb6c5d3d"
@@ -253,14 +253,14 @@
       "@std/path@1.0.0-rc.1": {
         "integrity": "b8c00ae2f19106a6bb7cbf1ab9be52aa70de1605daeb2dbdc4f87a7cbaf10ff6"
       },
-      "@std/path@1.0.7": {
-        "integrity": "76a689e07f0e15dcc6002ec39d0866797e7156629212b28f27179b8a5c3b33a1"
+      "@std/path@1.0.8": {
+        "integrity": "548fa456bb6a04d3c1a1e7477986b6cffbce95102d0bb447c67c4ee70e0364be"
       },
       "@std/semver@0.224.3": {
         "integrity": "7bb34b5ad46de2c0c73de0ca3e30081ef64b4361f66abd57c84ff1011c6a1233"
       },
-      "@std/streams@1.0.7": {
-        "integrity": "1a93917ca0c58c01b2bfb93647189229b1702677f169b6fb61ad6241cd2e499b"
+      "@std/streams@1.0.8": {
+        "integrity": "b41332d93d2cf6a82fe4ac2153b930adf1a859392931e2a19d9fabfb6f154fb3"
       },
       "@supabase/supabase-js@2.45.1": {
         "integrity": "6a11880b2a83facb69debd2862afbaab2ad560205eee3dec6499602785ca7491",
@@ -279,27 +279,27 @@
         "integrity": "sha512-vCfxauaZutL3NImzB2G9LjLt36vKAckc6DhMp05An14kVo8F1Yofb6SIl6U3SaEz8pG2QOB9ptwM5c+zGevwIQ==",
         "dependencies": {}
       },
-      "@algolia/client-common@5.10.2": {
-        "integrity": "sha512-eE4OaTlb5KZdCehWmDARq2KEmMF7DEeFLjKqFDcZNb56k1DMSsa9zCQRXZMovlf2AXLsx0A/1q+SGAEgzF7G3w==",
+      "@algolia/client-common@5.13.0": {
+        "integrity": "sha512-2SP6bGGWOTN920MLZv8s7yIR3OqY03vEe4U+vb2MGdL8a/8EQznF3L/nTC/rGf/hvEfZlX2tGFxPJaF2waravg==",
         "dependencies": {}
       },
-      "@algolia/client-search@5.10.2": {
-        "integrity": "sha512-rGX8uil2uvPycFgtS9Fzwvh4tgKvfFWG5RIh3E77W42HrO66bykCf9jHqhIIlCxdDJih1PuUqBYZIkIAAoSkww==",
+      "@algolia/client-search@5.13.0": {
+        "integrity": "sha512-s2ge3uZ6Zg2sPSFibqijgEYsuorxcc8KVHg3I95nOPHvFHdnBtSHymhZvq4sp/fu8ijt/Y8jLwkuqm5myn+2Sg==",
         "dependencies": {
-          "@algolia/client-common": "@algolia/client-common@5.10.2",
-          "@algolia/requester-browser-xhr": "@algolia/requester-browser-xhr@5.10.2",
-          "@algolia/requester-fetch": "@algolia/requester-fetch@5.10.2",
-          "@algolia/requester-node-http": "@algolia/requester-node-http@5.10.2"
+          "@algolia/client-common": "@algolia/client-common@5.13.0",
+          "@algolia/requester-browser-xhr": "@algolia/requester-browser-xhr@5.13.0",
+          "@algolia/requester-fetch": "@algolia/requester-fetch@5.13.0",
+          "@algolia/requester-node-http": "@algolia/requester-node-http@5.13.0"
         }
       },
       "@algolia/logger-common@4.20.0": {
         "integrity": "sha512-xouigCMB5WJYEwvoWW5XDv7Z9f0A8VoXJc3VKwlHJw/je+3p2RcDXfksLI4G4lIVncFUYMZx30tP/rsdlvvzHQ==",
         "dependencies": {}
       },
-      "@algolia/requester-browser-xhr@5.10.2": {
-        "integrity": "sha512-gzlfE/H05ggDiEWNi8WaDSRhpE5X8rD1JqYKPPeM31JRI3TutQIKAk3MSUsa1bHM/Di56r2Gm6L1g3ZlZv2ETA==",
+      "@algolia/requester-browser-xhr@5.13.0": {
+        "integrity": "sha512-NV6oSCt5lFuzfsVQoSBpewEWf/h4ySr7pv2bfwu9yF/jc/g39pig8+YpuqsxlRWBm/lTGVA2V0Ai9ySwrNumIA==",
         "dependencies": {
-          "@algolia/client-common": "@algolia/client-common@5.10.2"
+          "@algolia/client-common": "@algolia/client-common@5.13.0"
         }
       },
       "@algolia/requester-common@4.20.0": {
@@ -312,16 +312,16 @@
           "@algolia/requester-common": "@algolia/requester-common@4.20.0"
         }
       },
-      "@algolia/requester-fetch@5.10.2": {
-        "integrity": "sha512-Q27ciW9WRdq3pUITVlxpHIwe9QWOe+oPvgs8Z+gsv8vMkwXnLfANvSgeZCyQgx3SqzUPzhel0ozVq7Qoh8xIkg==",
+      "@algolia/requester-fetch@5.13.0": {
+        "integrity": "sha512-094bK4rumf+rXJazxv3mq6eKRM0ep5AxIo8T0YmOdldswQt79apeufFiPLN19nHEWH22xR2FelimD+T/wRSP+Q==",
         "dependencies": {
-          "@algolia/client-common": "@algolia/client-common@5.10.2"
+          "@algolia/client-common": "@algolia/client-common@5.13.0"
         }
       },
-      "@algolia/requester-node-http@5.10.2": {
-        "integrity": "sha512-WMUQ4iFhNnQXC4F1Yj51x8tgIvq5h8jtTLMBs7LbMiW6JhnLHfBVl7IVk6X1fZJO5YcvXW051HN8aFlfAb5QEw==",
+      "@algolia/requester-node-http@5.13.0": {
+        "integrity": "sha512-JY5xhEYMgki53Wm+A6R2jUpOUdD0zZnBq+PC5R1TGMNOYL1s6JjDrJeMsvaI2YWxYMUSoCnRoltN/yf9RI8n3A==",
         "dependencies": {
-          "@algolia/client-common": "@algolia/client-common@5.10.2"
+          "@algolia/client-common": "@algolia/client-common@5.13.0"
         }
       },
       "@algolia/transporter@4.20.0": {
@@ -651,7 +651,7 @@
         "dependencies": {
           "@supabase/node-fetch": "@supabase/node-fetch@2.6.15",
           "@types/phoenix": "@types/phoenix@1.6.5",
-          "@types/ws": "@types/ws@8.5.12",
+          "@types/ws": "@types/ws@8.5.13",
           "ws": "ws@8.18.0"
         }
       },
@@ -681,8 +681,8 @@
         "integrity": "sha512-UE7oxhQLLd9gub6JKIAhDq06T0F6FnztwMNRvYgjeQSBeMc1ZG/tA47EwfduvkuQS8apbkM/lpLpWsaCeYsXVg==",
         "dependencies": {}
       },
-      "@types/ws@8.5.12": {
-        "integrity": "sha512-3tPRkv1EtkDpzlgyKyI8pGsGZAGPEaXeu0DOj5DI25Ja91bdAYddYHbADRYVrZMRbfW+1l5YwXVDKohDJNQxkQ==",
+      "@types/ws@8.5.13": {
+        "integrity": "sha512-osM/gWBTPKgHV8XkTunnegTRIsvF6owmf5w+JtAfOw472dptdm0dlGv4xCt6GwQRcC2XVOvvRE/0bAoQcL2QkA==",
         "dependencies": {
           "@types/node": "@types/node@18.16.19"
         }
@@ -734,7 +734,7 @@
         "integrity": "sha512-FQzyfOsTlwVzjHxKEqRIAdJx9niO6VCBCoEwax/VLSoQF29ggECcPuBqUMZ+u8jCZOPSy8b8/8KnuFbp0SaFZQ==",
         "dependencies": {
           "browserslist": "browserslist@4.24.2",
-          "caniuse-lite": "caniuse-lite@1.0.30001673",
+          "caniuse-lite": "caniuse-lite@1.0.30001677",
           "fraction.js": "fraction.js@4.3.7",
           "normalize-range": "normalize-range@0.1.2",
           "picocolors": "picocolors@1.1.1",
@@ -775,8 +775,8 @@
       "browserslist@4.24.2": {
         "integrity": "sha512-ZIc+Q62revdMcqC6aChtW4jz3My3klmCO1fEmINZY/8J3EpBg5/A/D0AKmBveUh6pgoeycoMkVMko84tuYS+Gg==",
         "dependencies": {
-          "caniuse-lite": "caniuse-lite@1.0.30001673",
-          "electron-to-chromium": "electron-to-chromium@1.5.47",
+          "caniuse-lite": "caniuse-lite@1.0.30001677",
+          "electron-to-chromium": "electron-to-chromium@1.5.52",
           "node-releases": "node-releases@2.0.18",
           "update-browserslist-db": "update-browserslist-db@1.1.1_browserslist@4.24.2"
         }
@@ -789,13 +789,13 @@
         "integrity": "sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==",
         "dependencies": {
           "browserslist": "browserslist@4.24.2",
-          "caniuse-lite": "caniuse-lite@1.0.30001673",
+          "caniuse-lite": "caniuse-lite@1.0.30001677",
           "lodash.memoize": "lodash.memoize@4.1.2",
           "lodash.uniq": "lodash.uniq@4.5.0"
         }
       },
-      "caniuse-lite@1.0.30001673": {
-        "integrity": "sha512-WTrjUCSMp3LYX0nE12ECkV0a+e6LC85E0Auz75555/qr78Oc8YWhEPNfDd6SHdtlCMSzqtuXY0uyEMNRcsKpKw==",
+      "caniuse-lite@1.0.30001677": {
+        "integrity": "sha512-fmfjsOlJUpMWu+mAAtZZZHz7UEwsUxIIvu1TJfO1HqFQvB/B+ii0xr9B5HpbZY/mC4XZ8SvjHJqtAY6pDPQEog==",
         "dependencies": {}
       },
       "chokidar@3.6.0": {
@@ -1007,8 +1007,8 @@
         "integrity": "sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==",
         "dependencies": {}
       },
-      "electron-to-chromium@1.5.47": {
-        "integrity": "sha512-zS5Yer0MOYw4rtK2iq43cJagHZ8sXN0jDHDKzB+86gSBSAI4v07S97mcq+Gs2vclAxSh1j7vOAHxSVgduiiuVQ==",
+      "electron-to-chromium@1.5.52": {
+        "integrity": "sha512-xtoijJTZ+qeucLBDNztDOuQBE1ksqjvNjvqFoST3nGC7fSpqJ+X6BdTBaY5BHG+IhWWmpc6b/KfpeuEDupEPOQ==",
         "dependencies": {}
       },
       "emoji-regex@8.0.0": {
