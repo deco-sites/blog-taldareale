@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/5422a681542a",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Broche",
+    "slug": "broches"
+  }
+}

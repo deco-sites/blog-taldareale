@@ -11,7 +11,12 @@
         "company": "Taldx"
       }
     ],
-    "categories": [],
+    "categories": [
+      {
+        "name": "Broche",
+        "slug": "broches"
+      }
+    ],
     "title": "8 maneiras de inserir um broche no seu visual",
     "excerpt": " ",
     "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/blog-taldareale/dbfaee3d-0544-458c-a663-39f7b2831d07/Broche.webp",

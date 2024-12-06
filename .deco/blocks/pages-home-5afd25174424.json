@@ -3,12 +3,18 @@
   "path": "/",
   "sections": [
     {
-      "__resolveType": "Header"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
     },
     {
-      "__resolveType": "site/sections/Hero.tsx",
-      "title": "<p><strong><span style=\"color: oklch(0.31 0 0); font-size: 80px\">Conheça tudo sobre as jóias</span></strong></p>",
-      "description": "Venha conhecer nosso Blog"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Hero.tsx",
+        "title": "<p><strong><span style=\"color: oklch(0.31 0 0); font-size: 80px\">Conheça tudo sobre as jóias</span></strong></p>",
+        "description": "Venha conhecer nosso Blog"
+      }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
