@@ -20,10 +20,28 @@
     }
   ],
   "caching": {
-    "directives": []
+    "directives": [
+      {
+        "name": "stale-while-revalidate"
+      }
+    ],
+    "enabled": true
   },
   "firstByteThresholdMS": false,
   "theme": {
     "__resolveType": "Neutral"
+  },
+  "abTesting": {
+    "replaces": [],
+    "includeScriptsToHead": {
+      "includes": [
+        {
+          "src": {}
+        }
+      ]
+    }
+  },
+  "flavor": {
+    "framework": "fresh"
   }
 }
