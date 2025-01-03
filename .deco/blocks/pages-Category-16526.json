@@ -3,6 +3,12 @@
   "path": "/categorias/:category",
   "sections": [
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/sections/Seo/SeoV2.tsx"
+      }
+    },
+    {
       "__resolveType": "Header"
     },
     {
@@ -15,7 +21,11 @@
           "slug": {
             "__resolveType": "website/functions/requestToParam.ts",
             "param": "category"
-          }
+          },
+          "sortBy": "date_desc"
+        },
+        "cta": {
+          "text": "Ver mais"
         }
       }
     },
