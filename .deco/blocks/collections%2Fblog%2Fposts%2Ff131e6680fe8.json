@@ -11,7 +11,9 @@
         "company": "Taldx"
       }
     ],
-    "categories": [],
+    "categories": [
+      null
+    ],
     "title": "Acessórios para carnaval: 5 opções para arrasar no bloquinho",
     "excerpt": " ",
     "image": "https://data.decoassets.com/blog-taldareale/4aed5f61-30ec-4a91-af79-070785e3c60c/acessoriosparacarnaval.webp",
