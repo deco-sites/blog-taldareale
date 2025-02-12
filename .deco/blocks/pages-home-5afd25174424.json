@@ -5,6 +5,13 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "website/sections/Seo/SeoV2.tsx",
+        "jsonLDs": []
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "Header"
       }
     },
@@ -12,24 +19,59 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Hero.tsx",
+        "cta": [],
         "title": "<p>Conheça tudo sobre as jóias</p>",
-        "description": "Venha conhecer nosso Blog",
-        "cta": []
+        "description": "Venha conhecer nosso Blog"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/MainPost.tsx",
+        "post": {
+          "__resolveType": "blog/loaders/BlogPostItem.ts",
+          "slug": "piercing"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/MainPost.tsx",
+        "post": {
+          "__resolveType": "blog/loaders/BlogPostItem.ts",
+          "slug": "corrente"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/MainPost.tsx",
+        "post": {
+          "__resolveType": "blog/loaders/BlogPostItem.ts",
+          "slug": "broche"
+        }
       }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/BlogPosts.tsx",
+        "cta": {
+          "text": "Ver Mais"
+        },
         "posts": {
           "__resolveType": "blog/loaders/BlogpostList.ts",
-          "count": 12,
-          "sortBy": "date_desc"
+          "sortBy": "date_desc",
+          "count": 6,
+          "page": 1,
+          "slug": "piercing"
         },
-        "cta": {
-          "text": "Ver mais"
-        },
-        "pagination": {}
+        "pagination": {
+          "page": 1,
+          "perPage": 3
+        }
       }
     },
     {
