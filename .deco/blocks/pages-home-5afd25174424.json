@@ -30,7 +30,7 @@
         "__resolveType": "site/sections/MainPost.tsx",
         "post": {
           "__resolveType": "blog/loaders/BlogPostItem.ts",
-          "slug": "piercing"
+          "slug": "acessorios-para-o-carnaval"
         }
       }
     },
@@ -40,17 +40,7 @@
         "__resolveType": "site/sections/MainPost.tsx",
         "post": {
           "__resolveType": "blog/loaders/BlogPostItem.ts",
-          "slug": "corrente"
-        }
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/MainPost.tsx",
-        "post": {
-          "__resolveType": "blog/loaders/BlogPostItem.ts",
-          "slug": "broche"
+          "slug": "piercing-hipoalergenico"
         }
       }
     },

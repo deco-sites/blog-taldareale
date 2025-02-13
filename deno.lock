@@ -7,7 +7,7 @@
       "jsr:@deco/durable@^0.5.3": "jsr:@deco/durable@0.5.3",
       "jsr:@deco/inspect-vscode@0.2.1": "jsr:@deco/inspect-vscode@0.2.1",
       "jsr:@deno/cache-dir@0.10.1": "jsr:@deno/cache-dir@0.10.1",
-      "jsr:@hono/hono@^4.5.4": "jsr:@hono/hono@4.7.0",
+      "jsr:@hono/hono@^4.5.4": "jsr:@hono/hono@4.7.1",
       "jsr:@luca/esbuild-deno-loader@0.10.3": "jsr:@luca/esbuild-deno-loader@0.10.3",
       "jsr:@std/assert@^0.213.1": "jsr:@std/assert@0.213.1",
       "jsr:@std/assert@^0.223.0": "jsr:@std/assert@0.223.0",
@@ -108,8 +108,8 @@
           "jsr:@std/path@^0.223"
         ]
       },
-      "@hono/hono@4.7.0": {
-        "integrity": "1eb10e1976d3dda22ab43115ecfa348a43cd17c8aea5c0039c9757ebded624f8"
+      "@hono/hono@4.7.1": {
+        "integrity": "f75aaf6a026ad05406e60125a70a3d2a77e3b62991f8c4e38c624bdfc1a1dc26"
       },
       "@luca/esbuild-deno-loader@0.10.3": {
         "integrity": "32fc93f7e7f78060234fd5929a740668aab1c742b808c6048b57f9aaea514921",
@@ -706,7 +706,7 @@
         "integrity": "sha512-KDi1Ny1gSePi1vm0q4oxSF8b4DR44GF4BbmS2YdhPLOEqd8pDviZOGH/GsmRwoWJ2+5Lr085X7naowMwKHDG1A==",
         "dependencies": {
           "caniuse-lite": "caniuse-lite@1.0.30001699",
-          "electron-to-chromium": "electron-to-chromium@1.5.97",
+          "electron-to-chromium": "electron-to-chromium@1.5.98",
           "node-releases": "node-releases@2.0.19",
           "update-browserslist-db": "update-browserslist-db@1.1.2_browserslist@4.24.4"
         }
@@ -937,8 +937,8 @@
         "integrity": "sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==",
         "dependencies": {}
       },
-      "electron-to-chromium@1.5.97": {
-        "integrity": "sha512-HKLtaH02augM7ZOdYRuO19rWDeY+QSJ1VxnXFa/XDFLf07HvM90pALIJFgrO+UVaajI3+aJMMpojoUTLZyQ7JQ==",
+      "electron-to-chromium@1.5.98": {
+        "integrity": "sha512-bI/LbtRBxU2GzK7KK5xxFd2y9Lf9XguHooPYbcXWy6wUoT8NMnffsvRhPmSeUHLSDKAEtKuTaEtK4Ms15zkIEA==",
         "dependencies": {}
       },
       "emoji-regex@8.0.0": {
