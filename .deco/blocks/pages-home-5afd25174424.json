@@ -26,19 +26,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "htmx/sections/Deferred.tsx",
-        "sections": [
-          {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "Footer"
-            }
-          }
-        ],
-        "loading": "lazy",
-        "trigger": {
-          "type": "load"
-        }
+        "__resolveType": "Footer"
       }
     }
   ],

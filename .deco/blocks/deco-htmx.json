@@ -1,7 +1,1 @@
-{
-  "__resolveType": "site/apps/deco/htmx.ts",
-  "version": "1.9.11",
-  "extensions": [
-    "ajax-header"
-  ]
-}
+{"__resolveType":"site/apps/deco/htmx.ts"}

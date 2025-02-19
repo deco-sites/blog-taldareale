@@ -31,19 +31,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "website/sections/Rendering/Deferred.tsx",
-        "sections": [
-          {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "Footer"
-            }
-          }
-        ],
-        "behavior": {
-          "type": "scroll"
-        },
-        "display": true
+        "__resolveType": "Footer"
       }
     }
   ],
