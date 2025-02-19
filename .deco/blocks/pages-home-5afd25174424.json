@@ -20,6 +20,10 @@
           "count": 12,
           "page": 1,
           "sortBy": "date_desc"
+        },
+        "pagination": {
+          "perPage": 3,
+          "page": 0
         }
       }
     },
