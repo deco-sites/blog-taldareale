@@ -3,5 +3,6 @@
   "version": "1.9.11",
   "extensions": [
     "ajax-header"
-  ]
+  ],
+  "cdn": "da"
 }
