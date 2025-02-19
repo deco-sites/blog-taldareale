@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/75c26cdc83bb",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Dicas",
+    "slug": "dicas"
+  }
+}

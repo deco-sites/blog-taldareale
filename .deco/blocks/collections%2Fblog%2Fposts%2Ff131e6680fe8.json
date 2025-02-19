@@ -12,7 +12,10 @@
       }
     ],
     "categories": [
-      null
+      {
+        "name": "Dicas",
+        "slug": "dicas"
+      }
     ],
     "title": "Acessórios para carnaval: 5 opções para arrasar no bloquinho",
     "excerpt": " ",

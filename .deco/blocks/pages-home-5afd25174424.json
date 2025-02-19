@@ -5,43 +5,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "website/sections/Seo/SeoV2.tsx",
-        "jsonLDs": []
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
         "__resolveType": "Header"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Hero.tsx",
-        "cta": [],
-        "title": "<p>Conheça tudo sobre as jóias</p>",
-        "description": "Venha conhecer nosso Blog"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/MainPost.tsx",
-        "post": {
-          "__resolveType": "blog/loaders/BlogPostItem.ts",
-          "slug": "acessorios-para-o-carnaval"
-        }
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/MainPost.tsx",
-        "post": {
-          "__resolveType": "blog/loaders/BlogPostItem.ts",
-          "slug": "piercing-hipoalergenico"
-        }
       }
     },
     {
@@ -49,28 +13,42 @@
       "section": {
         "__resolveType": "site/sections/BlogPosts.tsx",
         "cta": {
-          "text": "Ver Mais"
+          "text": "Ver mais"
         },
         "posts": {
           "__resolveType": "blog/loaders/BlogpostList.ts",
-          "sortBy": "date_desc",
-          "count": 6,
+          "count": 12,
           "page": 1,
-          "slug": "piercing"
-        },
-        "pagination": {
-          "page": 1,
-          "perPage": 3
+          "sortBy": "date_desc"
         }
       }
     },
     {
-      "__resolveType": "Footer"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "htmx/sections/Deferred.tsx",
+        "sections": [
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Footer"
+            }
+          }
+        ],
+        "loading": "lazy"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "htmx/sections/htmx.tsx"
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx",
-    "type": "website"
+    "type": "article",
+    "jsonLD": null
   }
 }
