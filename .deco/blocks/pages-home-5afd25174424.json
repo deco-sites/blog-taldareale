@@ -37,7 +37,7 @@
         ],
         "loading": "lazy",
         "trigger": {
-          "type": "scroll"
+          "type": "load"
         }
       }
     },
