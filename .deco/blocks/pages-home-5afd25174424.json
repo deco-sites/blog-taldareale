@@ -11,6 +11,14 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Hero.tsx",
+        "title": "<p>Conheça tudo sobre jóias</p>",
+        "description": "Venha conhecer nosso blog"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/BlogPosts.tsx",
         "cta": {
           "text": "Ver mais"
