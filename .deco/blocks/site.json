@@ -29,7 +29,7 @@
   },
   "firstByteThresholdMS": false,
   "theme": {
-    "__resolveType": "Neutral"
+    "__resolveType": "Vanilla"
   },
   "abTesting": {
     "replaces": [],
