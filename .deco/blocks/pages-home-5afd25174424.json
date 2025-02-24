@@ -3,36 +3,27 @@
   "path": "/",
   "sections": [
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "Header"
-      }
+      "__resolveType": "Header"
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Hero.tsx",
-        "title": "<p>Conheça tudo sobre jóias</p>",
-        "description": "Venha conhecer nosso blog"
-      }
+      "__resolveType": "site/sections/Hero.tsx",
+      "title": "<p>Conheça tudo sobre jóias</p>",
+      "description": "Venha conhecer nosso blog"
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/BlogPosts.tsx",
-        "cta": {
-          "text": "Ver mais"
-        },
-        "posts": {
-          "__resolveType": "blog/loaders/BlogpostList.ts",
-          "count": 12,
-          "page": 1,
-          "sortBy": "date_desc"
-        },
-        "pagination": {
-          "perPage": 3,
-          "page": 0
-        }
+      "__resolveType": "site/sections/BlogPosts.tsx",
+      "cta": {
+        "text": "Ver mais"
+      },
+      "posts": {
+        "__resolveType": "blog/loaders/BlogpostList.ts",
+        "count": 12,
+        "page": 1,
+        "sortBy": "date_desc"
+      },
+      "pagination": {
+        "perPage": 3,
+        "page": 0
       }
     },
     {
