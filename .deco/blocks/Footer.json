@@ -1,1 +1,63 @@
-{"__resolveType":"site/sections/Footer.tsx","links":[{"items":[{"href":"https://taldarealeza.com.br/pages/quem-somos","label":"Quem somos"},{"label":"Política de Entrega, Reembolso e Devolução","href":"https://taldarealeza.com.br/pages/politica-de-entrega-reembolso-e-devolucao"},{"href":"https://taldarealeza.com.br/pages/politica-privacidade","label":"Política Privacidade"}],"title":"Institucional"},{"items":[{"label":"Home","href":"https://taldarealeza.com.br/"},{"label":"Piercings","href":"https://taldarealeza.com.br/collections/piercings"},{"label":"Aneis","href":"https://taldarealeza.com.br/collections/anel"}],"title":"Ecommerce"}],"bottomLinks":[],"social":[{"network":"Instagram","href":"https://www.instagram.com/taldarealezajoias/"},{"network":"Facebook","href":"https://www.facebook.com/profile.php?id=100089965216819"}],"subscribe":{"title":"Assine e receba nossa newsletter com conteúdos exclusivos"},"logo":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12317/7ccfd19c-fbd0-4bc4-81ba-de4095e2ead0","alt":"Logo TaldaRealeza"},"madeWith":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12317/9191af7d-19d4-483b-94a0-e2396784495b","label":"Blog criado pela própria"},"copyright":"© 2024 Talda Realeza. All rights reserved."}
+{
+  "__resolveType": "site/sections/Footer.tsx",
+  "links": [
+    {
+      "items": [
+        {
+          "href": "https://taldarealeza.com.br/pages/quem-somos",
+          "label": "Quem somos"
+        },
+        {
+          "label": "Política de Entrega, Reembolso e Devolução",
+          "href": "https://taldarealeza.com.br/pages/politica-de-entrega-reembolso-e-devolucao"
+        },
+        {
+          "href": "https://taldarealeza.com.br/pages/politica-privacidade",
+          "label": "Política Privacidade"
+        }
+      ],
+      "title": "Institucional"
+    },
+    {
+      "items": [
+        {
+          "label": "Home",
+          "href": "https://taldarealeza.com.br/"
+        },
+        {
+          "label": "Piercings",
+          "href": "https://taldarealeza.com.br/collections/piercings"
+        },
+        {
+          "label": "Aneis",
+          "href": "https://taldarealeza.com.br/collections/anel"
+        }
+      ],
+      "title": "Ecommerce"
+    }
+  ],
+  "bottomLinks": [],
+  "social": [
+    {
+      "network": "Instagram",
+      "href": "https://www.instagram.com/taldarealezajoias/"
+    },
+    {
+      "network": "Facebook",
+      "href": "https://www.facebook.com/profile.php?id=100089965216819"
+    }
+  ],
+  "subscribe": {
+    "title": "Assine e receba nossa newsletter com conteúdos exclusivos",
+    "instructions": "<p></p>"
+  },
+  "logo": {
+    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12317/7ccfd19c-fbd0-4bc4-81ba-de4095e2ead0",
+    "alt": "Logo TaldaRealeza"
+  },
+  "madeWith": {
+    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12317/9191af7d-19d4-483b-94a0-e2396784495b",
+    "label": "Blog criado pela própria"
+  },
+  "copyright": "© 2024 Talda Realeza. All rights reserved."
+}
