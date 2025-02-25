@@ -1,1 +1,22 @@
-{"__resolveType":"site/sections/Header.tsx","navigation":{"links":[{"label":"Home","url":"https://blog.taldarealeza.com.br"}],"buttons":[{"href":"https://taldarealeza.com.br","text":"Ecommerce"}]},"logo":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12317/c8c608e0-dfdc-44d5-bc25-aadf667ac638","alt":"Logo TaldaRealeza"}}
+{
+  "__resolveType": "site/sections/Header.tsx",
+  "navigation": {
+    "links": [
+      {
+        "label": "Home",
+        "url": "https://blog.taldarealeza.com.br"
+      }
+    ],
+    "buttons": [
+      {
+        "href": "https://taldarealeza.com.br",
+        "text": "Ecommerce",
+        "outline": true
+      }
+    ]
+  },
+  "logo": {
+    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12317/c8c608e0-dfdc-44d5-bc25-aadf667ac638",
+    "alt": "Logo TaldaRealeza"
+  }
+}
