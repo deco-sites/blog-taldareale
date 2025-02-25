@@ -164,6 +164,11 @@ export default function Haader({
           <ul class="flex gap-3">
             {navigation.buttons?.map((item) => (
               <a
+                style="background-color: black; /* Preenchimento preto */
+                  color: white;           /* Texto em branco */
+                  padding: 10px 20px;    /* Espaçamento interno */
+                  border: none;           /* Remove a borda padrão */
+                  border-radius: 5px;"
                 key={item?.id}
                 id={item?.id}
                 href={item?.href}

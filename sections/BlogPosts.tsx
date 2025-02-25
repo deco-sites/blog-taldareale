@@ -105,9 +105,17 @@ export default function BlogPosts({
                 <div class="flex flex-wrap gap-2">
                   {post.categories?.map((category) => (
                     <div 
+                      style="
+                        background-color: black; /* Preenchimento preto */
+                        color: white;           /* Texto em branco */
+                        padding: 10px 10px;    /* Espaçamento interno */
+                        border: none;           /* Remove a borda padrão */
+                        border-radius: 25px;    /* Borda arredondada */
+                      "
                       href={`/${post.slug}`}
                       class="badge badge-lg badge-primary text-xs">
                       {category.name}
+                      
                     </div>
                   ))}
                 </div>
@@ -131,6 +139,13 @@ export default function BlogPosts({
         {posts && to < posts.length && (
           <div class="flex justify-center w-full" id={postList}>
             <button
+              style="
+                background-color: black; /* Preenchimento preto */
+                color: white;           /* Texto em branco */
+                padding: 10px 20px;    /* Espaçamento interno */
+                border: none;           /* Remove a borda padrão */
+                border-radius: 5px;    /* Borda arredondada */
+              "
               hx-get={fetchMoreLink}
               hx-swap="outerHTML"
               hx-target={`#${postList}`}
