@@ -974,7 +974,7 @@
       "fastq@1.19.0": {
         "integrity": "sha512-7SFSRCNjBQIZH/xZR3iy5iQYR8aGBE0h3VG6/cwlbrpdciNYBMotQav8c1XI3HjHH+NikUpP53nPdlZSdWmFzA==",
         "dependencies": {
-          "reusify": "reusify@1.0.4"
+          "reusify": "reusify@1.1.0"
         }
       },
       "fill-range@7.1.1": {
@@ -1554,8 +1554,8 @@
           "supports-preserve-symlinks-flag": "supports-preserve-symlinks-flag@1.0.0"
         }
       },
-      "reusify@1.0.4": {
-        "integrity": "sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==",
+      "reusify@1.1.0": {
+        "integrity": "sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==",
         "dependencies": {}
       },
       "run-parallel@1.2.0": {
