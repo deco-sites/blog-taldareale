@@ -11,19 +11,29 @@
       "description": "Venha conhecer nosso blog"
     },
     {
-      "__resolveType": "site/sections/BlogPosts.tsx",
-      "cta": {
-        "text": "Ver mais"
-      },
-      "posts": {
-        "__resolveType": "blog/loaders/BlogpostList.ts",
-        "count": 12,
-        "page": 1,
-        "sortBy": "date_desc"
-      },
-      "pagination": {
-        "perPage": 3,
-        "page": 0
+      "__resolveType": "site/sections/MainPost.tsx",
+      "post": {
+        "__resolveType": "blog/loaders/BlogPostItem.ts",
+        "slug": "piercing-hipoalergenico"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/BlogPosts.tsx",
+        "cta": {
+          "text": "Ver mais"
+        },
+        "posts": {
+          "__resolveType": "blog/loaders/BlogpostList.ts",
+          "count": 12,
+          "page": 1,
+          "sortBy": "date_desc"
+        },
+        "pagination": {
+          "perPage": 3,
+          "page": 0
+        }
       }
     },
     {
