@@ -95,6 +95,7 @@ export default function BlogPost({ page }: Props) {
         className="w-full object-cover aspect-video max-h-[600px] rounded-2xl"
         width={600}
         src={image || ""}
+        alt={image}
         loading="eager"
       />
       <div

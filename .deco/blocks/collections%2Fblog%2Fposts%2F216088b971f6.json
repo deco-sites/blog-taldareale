@@ -25,7 +25,9 @@
     "seo": {
       "title": "Vai colocar um piercing? Confira tudo o que você precisa saber",
       "description": "Pensando em colocar um piercing? Descubra como funciona a perfuração e confira todos os cuidados necessários.",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/blog-taldareale/558fb9d2-8537-4ef3-b276-91ac8940d899/Piercing.webp"
-    }
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/blog-taldareale/558fb9d2-8537-4ef3-b276-91ac8940d899/Piercing.webp",
+      "canonical": "https://blog.taldarealeza.com.br/piercing"
+    },
+    "excerpt": " "
   }
 }
