@@ -56,7 +56,6 @@ export default function MainPost({
               sizes="(max-width: 656px) 100vw, 30vw"
               src={post?.image || ""}
               alt={post?.image}
-              decoding="async"
               loading="eager"
             />
           )}
