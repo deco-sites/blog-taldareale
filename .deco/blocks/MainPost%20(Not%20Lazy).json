@@ -1,0 +1,7 @@
+{
+  "__resolveType": "site/sections/MainPost.tsx",
+  "post": {
+    "__resolveType": "blog/loaders/BlogPostItem.ts",
+    "slug": "piercing-hipoalergenico"
+  }
+}

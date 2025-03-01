@@ -11,11 +11,7 @@
       "description": "Venha conhecer nosso blog"
     },
     {
-      "__resolveType": "site/sections/MainPost.tsx",
-      "post": {
-        "__resolveType": "blog/loaders/BlogPostItem.ts",
-        "slug": "piercing-hipoalergenico"
-      }
+      "__resolveType": "MainPost (Not Lazy)"
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

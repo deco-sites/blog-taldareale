@@ -57,7 +57,7 @@ export default function MainPost({
               src={post?.image || ""}
               alt={post?.image}
               decoding="async"
-              loading="lazy"
+              loading="eager"
             />
           )}
           <div class="p-6 space-y-4">
