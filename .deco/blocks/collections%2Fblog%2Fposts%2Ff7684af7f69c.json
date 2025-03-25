@@ -11,7 +11,12 @@
         "company": "Taldx"
       }
     ],
-    "categories": [],
+    "categories": [
+      {
+        "name": "Anel",
+        "slug": "anel"
+      }
+    ],
     "title": "Aliança de casamento: o guia completo para quem vai dizer “sim”!",
     "excerpt": " ",
     "date": "2025-03-24",
