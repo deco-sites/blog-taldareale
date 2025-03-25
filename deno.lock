@@ -7,7 +7,7 @@
       "jsr:@deco/durable@^0.5.3": "jsr:@deco/durable@0.5.3",
       "jsr:@deco/inspect-vscode@0.2.1": "jsr:@deco/inspect-vscode@0.2.1",
       "jsr:@deno/cache-dir@0.10.1": "jsr:@deno/cache-dir@0.10.1",
-      "jsr:@hono/hono@^4.5.4": "jsr:@hono/hono@4.7.4",
+      "jsr:@hono/hono@^4.5.4": "jsr:@hono/hono@4.7.5",
       "jsr:@luca/esbuild-deno-loader@0.10.3": "jsr:@luca/esbuild-deno-loader@0.10.3",
       "jsr:@std/assert@^0.213.1": "jsr:@std/assert@0.213.1",
       "jsr:@std/assert@^0.223.0": "jsr:@std/assert@0.223.0",
@@ -108,8 +108,8 @@
           "jsr:@std/path@^0.223"
         ]
       },
-      "@hono/hono@4.7.4": {
-        "integrity": "c03c9cbe0fbfc4e51f3fee6502a7903aa4f9ef7c2c98635607b15eee14258825"
+      "@hono/hono@4.7.5": {
+        "integrity": "36a7e1b3db8a58e5dc2bd36a76be53346f0966e04c24c635c4d6f58875575b0a"
       },
       "@luca/esbuild-deno-loader@0.10.3": {
         "integrity": "32fc93f7e7f78060234fd5929a740668aab1c742b808c6048b57f9aaea514921",
@@ -670,7 +670,7 @@
         "integrity": "sha512-FQzyfOsTlwVzjHxKEqRIAdJx9niO6VCBCoEwax/VLSoQF29ggECcPuBqUMZ+u8jCZOPSy8b8/8KnuFbp0SaFZQ==",
         "dependencies": {
           "browserslist": "browserslist@4.24.4",
-          "caniuse-lite": "caniuse-lite@1.0.30001702",
+          "caniuse-lite": "caniuse-lite@1.0.30001707",
           "fraction.js": "fraction.js@4.3.7",
           "normalize-range": "normalize-range@0.1.2",
           "picocolors": "picocolors@1.1.1",
@@ -705,8 +705,8 @@
       "browserslist@4.24.4": {
         "integrity": "sha512-KDi1Ny1gSePi1vm0q4oxSF8b4DR44GF4BbmS2YdhPLOEqd8pDviZOGH/GsmRwoWJ2+5Lr085X7naowMwKHDG1A==",
         "dependencies": {
-          "caniuse-lite": "caniuse-lite@1.0.30001702",
-          "electron-to-chromium": "electron-to-chromium@1.5.113",
+          "caniuse-lite": "caniuse-lite@1.0.30001707",
+          "electron-to-chromium": "electron-to-chromium@1.5.123",
           "node-releases": "node-releases@2.0.19",
           "update-browserslist-db": "update-browserslist-db@1.1.3_browserslist@4.24.4"
         }
@@ -719,13 +719,13 @@
         "integrity": "sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==",
         "dependencies": {
           "browserslist": "browserslist@4.24.4",
-          "caniuse-lite": "caniuse-lite@1.0.30001702",
+          "caniuse-lite": "caniuse-lite@1.0.30001707",
           "lodash.memoize": "lodash.memoize@4.1.2",
           "lodash.uniq": "lodash.uniq@4.5.0"
         }
       },
-      "caniuse-lite@1.0.30001702": {
-        "integrity": "sha512-LoPe/D7zioC0REI5W73PeR1e1MLCipRGq/VkovJnd6Df+QVqT+vT33OXCp8QUd7kA7RZrHWxb1B36OQKI/0gOA==",
+      "caniuse-lite@1.0.30001707": {
+        "integrity": "sha512-3qtRjw/HQSMlDWf+X79N206fepf4SOOU6SQLMaq/0KkZLmSjPxAkBOQQ+FxbHKfHmYLZFfdWsO3KA90ceHPSnw==",
         "dependencies": {}
       },
       "chokidar@3.6.0": {
@@ -937,8 +937,8 @@
         "integrity": "sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==",
         "dependencies": {}
       },
-      "electron-to-chromium@1.5.113": {
-        "integrity": "sha512-wjT2O4hX+wdWPJ76gWSkMhcHAV2PTMX+QetUCPYEdCIe+cxmgzzSSiGRCKW8nuh4mwKZlpv0xvoW7OF2X+wmHg==",
+      "electron-to-chromium@1.5.123": {
+        "integrity": "sha512-refir3NlutEZqlKaBLK0tzlVLe5P2wDKS7UQt/3SpibizgsRAPOsqQC3ffw1nlv3ze5gjRQZYHoPymgVZkplFA==",
         "dependencies": {}
       },
       "emoji-regex@8.0.0": {
@@ -1166,8 +1166,8 @@
           "thenify-all": "thenify-all@1.6.0"
         }
       },
-      "nanoid@3.3.8": {
-        "integrity": "sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==",
+      "nanoid@3.3.11": {
+        "integrity": "sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==",
         "dependencies": {}
       },
       "node-releases@2.0.19": {
@@ -1477,7 +1477,7 @@
       "postcss@8.4.27": {
         "integrity": "sha512-gY/ACJtJPSmUFPDCHtX78+01fHa64FaU4zaaWfuh1MhGJISufJAH4cun6k/8fwsHYeK4UQmENQK+tRLCFJE8JQ==",
         "dependencies": {
-          "nanoid": "nanoid@3.3.8",
+          "nanoid": "nanoid@3.3.11",
           "picocolors": "picocolors@1.1.1",
           "source-map-js": "source-map-js@1.2.1"
         }
@@ -1485,7 +1485,7 @@
       "postcss@8.5.3": {
         "integrity": "sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==",
         "dependencies": {
-          "nanoid": "nanoid@3.3.8",
+          "nanoid": "nanoid@3.3.11",
           "picocolors": "picocolors@1.1.1",
           "source-map-js": "source-map-js@1.2.1"
         }
