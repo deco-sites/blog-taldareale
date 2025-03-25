@@ -1,0 +1,10 @@
+{
+  "name": "collections/blog/authors/8f8e9318ac51",
+  "__resolveType": "blog/loaders/Author.ts",
+  "author": {
+    "name": "Renan Tudela",
+    "email": "renanmateustudela@gmail.com",
+    "jobTitle": "Redator",
+    "company": "Taldx"
+  }
+}
