@@ -45,7 +45,7 @@ export default function MainPost({
     <div class="container lg:mx-auto lg:py-14 mx-2 py-12 text-sm">
       <div class="space-y-16">
         <a
-          href={`/blog/${post?.slug}`}
+          href={`//${post?.slug}`}
           class="border border-secondary gap-8 grid grid-cols-1 items-center md:grid-cols-2 overflow-hidden rounded-lg"
         >
           {post?.image && (
