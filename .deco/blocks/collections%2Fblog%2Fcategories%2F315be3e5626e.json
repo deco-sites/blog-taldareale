@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/315be3e5626e",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Anel",
+    "slug": "anel"
+  }
+}
