@@ -71,6 +71,7 @@
       "npm:autoprefixer@10.4.14": "npm:autoprefixer@10.4.14_postcss@8.4.27",
       "npm:colorjs.io": "npm:colorjs.io@0.5.2",
       "npm:cssnano@6.0.1": "npm:cssnano@6.0.1_postcss@8.4.27",
+      "npm:daisyui@4.4.19": "npm:daisyui@4.4.19_postcss@8.4.27",
       "npm:fuse.js@7.0.0": "npm:fuse.js@7.0.0",
       "npm:lru-cache@10.2.0": "npm:lru-cache@10.2.0",
       "npm:postcss@8.4.27": "npm:postcss@8.4.27",
@@ -586,7 +587,7 @@
         "dependencies": {
           "@supabase/node-fetch": "@supabase/node-fetch@2.6.15",
           "@types/phoenix": "@types/phoenix@1.6.6",
-          "@types/ws": "@types/ws@8.18.0",
+          "@types/ws": "@types/ws@8.18.1",
           "ws": "ws@8.18.1"
         }
       },
@@ -616,8 +617,8 @@
         "integrity": "sha512-UE7oxhQLLd9gub6JKIAhDq06T0F6FnztwMNRvYgjeQSBeMc1ZG/tA47EwfduvkuQS8apbkM/lpLpWsaCeYsXVg==",
         "dependencies": {}
       },
-      "@types/ws@8.18.0": {
-        "integrity": "sha512-8svvI3hMyvN0kKCJMvTJP/x6Y/EoQbepff882wL+Sn5QsXb3etnamgrJq4isrBxSJj5L2AuXcI0+bgkoAXGUJw==",
+      "@types/ws@8.18.1": {
+        "integrity": "sha512-ThVF6DCVhA8kUGy+aazFQ4kXQ7E1Ty7A3ypFOe0IcJV8O/M511G99AW24irKrW56Wt44yG9+ij8FaqoBGkuBXg==",
         "dependencies": {
           "@types/node": "@types/node@18.16.19"
         }
@@ -669,7 +670,7 @@
         "integrity": "sha512-FQzyfOsTlwVzjHxKEqRIAdJx9niO6VCBCoEwax/VLSoQF29ggECcPuBqUMZ+u8jCZOPSy8b8/8KnuFbp0SaFZQ==",
         "dependencies": {
           "browserslist": "browserslist@4.24.4",
-          "caniuse-lite": "caniuse-lite@1.0.30001707",
+          "caniuse-lite": "caniuse-lite@1.0.30001712",
           "fraction.js": "fraction.js@4.3.7",
           "normalize-range": "normalize-range@0.1.2",
           "picocolors": "picocolors@1.1.1",
@@ -704,8 +705,8 @@
       "browserslist@4.24.4": {
         "integrity": "sha512-KDi1Ny1gSePi1vm0q4oxSF8b4DR44GF4BbmS2YdhPLOEqd8pDviZOGH/GsmRwoWJ2+5Lr085X7naowMwKHDG1A==",
         "dependencies": {
-          "caniuse-lite": "caniuse-lite@1.0.30001707",
-          "electron-to-chromium": "electron-to-chromium@1.5.123",
+          "caniuse-lite": "caniuse-lite@1.0.30001712",
+          "electron-to-chromium": "electron-to-chromium@1.5.132",
           "node-releases": "node-releases@2.0.19",
           "update-browserslist-db": "update-browserslist-db@1.1.3_browserslist@4.24.4"
         }
@@ -718,13 +719,13 @@
         "integrity": "sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==",
         "dependencies": {
           "browserslist": "browserslist@4.24.4",
-          "caniuse-lite": "caniuse-lite@1.0.30001707",
+          "caniuse-lite": "caniuse-lite@1.0.30001712",
           "lodash.memoize": "lodash.memoize@4.1.2",
           "lodash.uniq": "lodash.uniq@4.5.0"
         }
       },
-      "caniuse-lite@1.0.30001707": {
-        "integrity": "sha512-3qtRjw/HQSMlDWf+X79N206fepf4SOOU6SQLMaq/0KkZLmSjPxAkBOQQ+FxbHKfHmYLZFfdWsO3KA90ceHPSnw==",
+      "caniuse-lite@1.0.30001712": {
+        "integrity": "sha512-MBqPpGYYdQ7/hfKiet9SCI+nmN5/hp4ZzveOJubl5DTAMa5oggjAuoi0Z4onBpKPFI2ePGnQuQIzF3VxDjDJig==",
         "dependencies": {}
       },
       "chokidar@3.6.0": {
@@ -792,6 +793,13 @@
           "domhandler": "domhandler@5.0.3",
           "domutils": "domutils@3.2.2",
           "nth-check": "nth-check@2.1.1"
+        }
+      },
+      "css-selector-tokenizer@0.8.0": {
+        "integrity": "sha512-Jd6Ig3/pe62/qe5SBPTN8h8LeUg/pT4lLgtavPf7updwwHpvFzxvOQBHYj2LZDMjUnBzgvIUSjRcf6oT5HzHFg==",
+        "dependencies": {
+          "cssesc": "cssesc@3.0.0",
+          "fastparse": "fastparse@1.1.2"
         }
       },
       "css-tree@2.2.1": {
@@ -872,6 +880,19 @@
           "css-tree": "css-tree@2.2.1"
         }
       },
+      "culori@3.3.0": {
+        "integrity": "sha512-pHJg+jbuFsCjz9iclQBqyL3B2HLCBF71BwVNujUYEvCeQMvV97R59MNK3R2+jgJ3a1fcZgI9B3vYgz8lzr/BFQ==",
+        "dependencies": {}
+      },
+      "daisyui@4.4.19_postcss@8.4.27": {
+        "integrity": "sha512-IjOLWwnndD4N7Ut5CDxbUsaVtbqXPeVHM92IcgxGFxpuOd3CCKW/PAXZH6JoBTHFRaN57vB9XqEhdWm5yC+bPA==",
+        "dependencies": {
+          "css-selector-tokenizer": "css-selector-tokenizer@0.8.0",
+          "culori": "culori@3.3.0",
+          "picocolors": "picocolors@1.1.1",
+          "postcss-js": "postcss-js@4.0.1_postcss@8.4.27"
+        }
+      },
       "debug@4.4.0": {
         "integrity": "sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==",
         "dependencies": {
@@ -916,8 +937,8 @@
         "integrity": "sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==",
         "dependencies": {}
       },
-      "electron-to-chromium@1.5.123": {
-        "integrity": "sha512-refir3NlutEZqlKaBLK0tzlVLe5P2wDKS7UQt/3SpibizgsRAPOsqQC3ffw1nlv3ze5gjRQZYHoPymgVZkplFA==",
+      "electron-to-chromium@1.5.132": {
+        "integrity": "sha512-QgX9EBvWGmvSRa74zqfnG7+Eno0Ak0vftBll0Pt2/z5b3bEGYL6OUXLgKPtvx73dn3dvwrlyVkjPKRRlhLYTEg==",
         "dependencies": {}
       },
       "emoji-regex@8.0.0": {
@@ -945,6 +966,10 @@
           "merge2": "merge2@1.4.1",
           "micromatch": "micromatch@4.0.8"
         }
+      },
+      "fastparse@1.1.2": {
+        "integrity": "sha512-483XLLxTVIwWK3QTrMGRqUfUpoOs/0hbQrl2oz4J0pAcm3A3bu84wxTFqGqkJzewCLdME38xJLJAxBABfQT8sQ==",
+        "dependencies": {}
       },
       "fastq@1.19.1": {
         "integrity": "sha512-GwLTyxkCXjXbxqIhTsMI2Nui8huMPtnxg7krajPJAjnEG/iiOS7i+zCtWGZR9G0NBKbXKh6X9m9UIsYX/N6vvQ==",
@@ -1202,8 +1227,8 @@
         "integrity": "sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==",
         "dependencies": {}
       },
-      "pirates@4.0.6": {
-        "integrity": "sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==",
+      "pirates@4.0.7": {
+        "integrity": "sha512-TfySrs/5nm8fQJDcBDuUng3VOUKsd7S+zqvbOTiGXHfxX4wK31ard+hoNuvkicM/2YFzlpDgABOevKSsB4G/FA==",
         "dependencies": {}
       },
       "postcss-calc@9.0.1_postcss@8.5.3": {
@@ -1277,7 +1302,7 @@
         "dependencies": {
           "lilconfig": "lilconfig@3.1.3",
           "postcss": "postcss@8.4.27",
-          "yaml": "yaml@2.7.0"
+          "yaml": "yaml@2.7.1"
         }
       },
       "postcss-merge-longhand@6.0.5_postcss@8.5.3": {
@@ -1609,7 +1634,7 @@
           "glob": "glob@10.4.5",
           "lines-and-columns": "lines-and-columns@1.2.4",
           "mz": "mz@2.7.0",
-          "pirates": "pirates@4.0.6",
+          "pirates": "pirates@4.0.7",
           "ts-interface-checker": "ts-interface-checker@0.1.13"
         }
       },
@@ -1743,8 +1768,8 @@
         "integrity": "sha512-RKW2aJZMXeMxVpnZ6bck+RswznaxmzdULiBr6KY7XkTnW8uvt0iT9H5DkHUChXrc+uurzwa0rVI16n/Xzjdz1w==",
         "dependencies": {}
       },
-      "yaml@2.7.0": {
-        "integrity": "sha512-+hSoy/QHluxmC9kCIJyL/uyFmLmc+e5CFR5Wa+bpIhIj85LVb9ZH2nVnqrHoSvKogwODv0ClqZkmiSSaIH5LTA==",
+      "yaml@2.7.1": {
+        "integrity": "sha512-10ULxpnOCQXxJvBgxsn9ptjq6uviG/htZKk9veJGhlqn3w/DxQ631zFF+nlQXLwmImeS5amR2dl2U8sg6U9jsQ==",
         "dependencies": {}
       }
     }
