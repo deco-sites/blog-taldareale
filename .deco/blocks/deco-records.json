@@ -1,0 +1,9 @@
+{
+  "__resolveType": "site/apps/deco/records.ts",
+  "url": "libsql://blog-taldareale-decocx.turso.io",
+  "authToken": {
+    "__resolveType": "website/loaders/secret.ts",
+    "name": "DATABASE_AUTH_TOKEN",
+    "encrypted": "8c8566f3b599a0b61f233de950a1ff9bfc3c58f7a989ed881f4381b32ef6ca5a61de31fbeff7daafdcb180bb718583468125878e3d95edca385317df7c6882c9abb1f10759de840d6942bba3a73e1e4486f1a0ac2194f09ed5be98c27c899266e10515d9225a30b8d0f320c3b8178143b665ce4ccb52102c29926a1aaf8ff4b96781732937916efff846853d48f30847d72c8f04f3a7e02f7fd352afff70953b81c80bbf6c00325104611e076468a67394fb74d1cfe1f92959a6751554e4706ecc6e42e8dda217fc54da51823f67567e54431ec046129d69d98a066f69891f80"
+  }
+}
