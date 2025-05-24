@@ -73,6 +73,7 @@
       "npm:autoprefixer@10.4.14": "npm:autoprefixer@10.4.14_postcss@8.4.27",
       "npm:colorjs.io": "npm:colorjs.io@0.5.2",
       "npm:cssnano@6.0.1": "npm:cssnano@6.0.1_postcss@8.4.27",
+      "npm:daisyui@4.4.19": "npm:daisyui@4.4.19_postcss@8.4.27",
       "npm:fuse.js@7.0.0": "npm:fuse.js@7.0.0",
       "npm:lru-cache@10.2.0": "npm:lru-cache@10.2.0",
       "npm:postcss@8.4.27": "npm:postcss@8.4.27",
@@ -864,6 +865,13 @@
           "nth-check": "nth-check@2.1.1"
         }
       },
+      "css-selector-tokenizer@0.8.0": {
+        "integrity": "sha512-Jd6Ig3/pe62/qe5SBPTN8h8LeUg/pT4lLgtavPf7updwwHpvFzxvOQBHYj2LZDMjUnBzgvIUSjRcf6oT5HzHFg==",
+        "dependencies": {
+          "cssesc": "cssesc@3.0.0",
+          "fastparse": "fastparse@1.1.2"
+        }
+      },
       "css-tree@2.2.1": {
         "integrity": "sha512-OA0mILzGc1kCOCSJerOeqDxDQ4HOh+G8NbOJFOTgOCzpw7fCBubk0fEyxp8AgOL/jvLgYA/uV0cMbe43ElF1JA==",
         "dependencies": {
@@ -940,6 +948,19 @@
         "integrity": "sha512-0LrrStPOdJj+SPCCrGhzryycLjwcgUSHBtxNA8aIDxf0GLsRh1cKYhB00Gd1lDOS4yGH69+SNn13+TWbVHETFQ==",
         "dependencies": {
           "css-tree": "css-tree@2.2.1"
+        }
+      },
+      "culori@3.3.0": {
+        "integrity": "sha512-pHJg+jbuFsCjz9iclQBqyL3B2HLCBF71BwVNujUYEvCeQMvV97R59MNK3R2+jgJ3a1fcZgI9B3vYgz8lzr/BFQ==",
+        "dependencies": {}
+      },
+      "daisyui@4.4.19_postcss@8.4.27": {
+        "integrity": "sha512-IjOLWwnndD4N7Ut5CDxbUsaVtbqXPeVHM92IcgxGFxpuOd3CCKW/PAXZH6JoBTHFRaN57vB9XqEhdWm5yC+bPA==",
+        "dependencies": {
+          "css-selector-tokenizer": "css-selector-tokenizer@0.8.0",
+          "culori": "culori@3.3.0",
+          "picocolors": "picocolors@1.1.1",
+          "postcss-js": "postcss-js@4.0.1_postcss@8.4.27"
         }
       },
       "data-uri-to-buffer@4.0.1": {
@@ -1023,6 +1044,10 @@
           "merge2": "merge2@1.4.1",
           "micromatch": "micromatch@4.0.8"
         }
+      },
+      "fastparse@1.1.2": {
+        "integrity": "sha512-483XLLxTVIwWK3QTrMGRqUfUpoOs/0hbQrl2oz4J0pAcm3A3bu84wxTFqGqkJzewCLdME38xJLJAxBABfQT8sQ==",
+        "dependencies": {}
       },
       "fastq@1.19.1": {
         "integrity": "sha512-GwLTyxkCXjXbxqIhTsMI2Nui8huMPtnxg7krajPJAjnEG/iiOS7i+zCtWGZR9G0NBKbXKh6X9m9UIsYX/N6vvQ==",

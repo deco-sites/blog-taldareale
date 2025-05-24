@@ -1,1 +1,5 @@
-{"__resolveType":"site/apps/deco/mailchimp.ts"}
+{
+  "__resolveType": "site/apps/deco/mailchimp.ts",
+  "apiKey": {},
+  "serverPrefix": "fba2861c825452cbb8449987ac2d6b20-us21"
+}
