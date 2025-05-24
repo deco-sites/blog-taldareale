@@ -22,7 +22,7 @@
         },
         "posts": {
           "__resolveType": "blog/loaders/BlogpostList.ts",
-          "count": 12,
+          "count": 1000,
           "page": 1,
           "sortBy": "date_desc"
         },
