@@ -2,10 +2,25 @@
   "name": "collections/blog/posts/7711550d6d31",
   "__resolveType": "blog/loaders/Blogpost.ts",
   "post": {
-    "authors": [],
-    "categories": [],
+    "authors": [
+      {
+        "name": "Rafael Silva",
+        "email": "contato@taldarealeza.com.br",
+        "jobTitle": "Analista de Conteúdo",
+        "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12317/7e3ac577-f894-4395-a29b-962d2854f7ae",
+        "company": "Taldx"
+      }
+    ],
+    "categories": [
+      {
+        "name": "Dicas",
+        "slug": "dicas"
+      }
+    ],
     "title": "Teste",
     "content": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.instagram.com/p/C_RE3oVy6of/\">https://www.instagram.com/p/C_RE3oVy6of/</a></p>",
-    "excerpt": " "
+    "excerpt": " ",
+    "date": "2025-08-15",
+    "slug": "teste-instagram"
   }
 }
