@@ -21,6 +21,25 @@ const BLOCKQUOTE_STYLES =
 const CONTENT_STYLES =
   `max-w-3xl mx-auto ${PARAGRAPH_STYLES} ${HEADING_STYLES} ${CODE_BLOCK_STYLES} ${IMAGE_STYLES} ${BLOCKQUOTE_STYLES}`;
 
+// Função para processar URLs do Instagram e converter em embeds
+function processInstagramEmbeds(content: string): string {
+  // Regex para detectar URLs do Instagram
+  const instagramUrlRegex = /https:\/\/(?:www\.)?instagram\.com\/p\/([A-Za-z0-9_-]+)\/?/g;
+  
+  return content.replace(instagramUrlRegex, (match, postId) => {
+    return `
+      <div style="display: flex; justify-content: center; margin: 32px 0;">
+        <blockquote class="instagram-media" 
+          data-instgrm-permalink="${match}" 
+          data-instgrm-version="14"
+          style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+        </blockquote>
+        <script async src="//www.instagram.com/embed.js"></script>
+      </div>
+    `;
+  });
+}
+
 const DEFAULT_AVATAR =
   "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e";
 
@@ -71,6 +90,9 @@ export default function BlogPost({ page }: Props) {
     day: "numeric",
   });
 
+  // Processa o conteúdo para converter URLs do Instagram em embeds
+  const processedContent = processInstagramEmbeds(content);
+
   return (
     <div className="w-full flex flex-col gap-20 container mx-auto px-4 md:px-0 py-12 lg:py-28">
       <div className="w-full flex flex-col gap-12 max-w-3xl lg:mx-auto">
@@ -101,7 +123,7 @@ export default function BlogPost({ page }: Props) {
       <div
         class={CONTENT_STYLES}
         dangerouslySetInnerHTML={{
-          __html: content,
+          __html: processedContent,
         }}
       >
       </div>
