@@ -13,9 +13,8 @@
           "__resolveType": "blog/loaders/BlogpostList.ts",
           "count": 6,
           "sortBy": "date_desc",
-          "slug": {
-            "__resolveType": "website/functions/requestToParam.ts",
-            "param": "category"
+          "category": {
+            "__resolveType": "site/loaders/categoryFromUrl.ts"
           }
         },
         "cta": {

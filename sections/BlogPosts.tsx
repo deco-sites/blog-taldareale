@@ -104,19 +104,20 @@ export default function BlogPosts({
                 </div>
                 <div class="flex flex-wrap gap-2">
                   {post.categories?.map((category) => (
-                    <div 
+                    <a 
+                      href={`/categorias/${category.slug}`}
                       style="
                         background-color: black; /* Preenchimento preto */
                         color: white;           /* Texto em branco */
                         padding: 10px 10px;    /* Espaçamento interno */
                         border: none;           /* Remove a borda padrão */
                         border-radius: 25px;    /* Borda arredondada */
+                        text-decoration: none;  /* Remove sublinhado */
+                        display: inline-block;  /* Para funcionar como botão */
                       "
-                      href={`/${post.slug}`}
-                      class="badge badge-lg badge-primary text-xs">
+                      class="badge badge-lg badge-primary text-xs hover:opacity-80">
                       {category.name}
-                      
-                    </div>
+                    </a>
                   ))}
                 </div>
                 <div class="flex flex-wrap gap-2">

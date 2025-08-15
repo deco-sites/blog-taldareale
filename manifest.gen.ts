@@ -8,33 +8,43 @@ import * as $$$$$$$$$$$2 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$3 from "./apps/deco/mailchimp.ts";
 import * as $$$$$$$$$$$4 from "./apps/deco/records.ts";
 import * as $$$$$$$$$$$5 from "./apps/site.ts";
+import * as $0 from "./functions/requestToParam.ts";
+import * as $$$0 from "./loaders/categoryFromUrl.ts";
 import * as $$$$$$0 from "./sections/BlogPost.tsx";
 import * as $$$$$$1 from "./sections/BlogPosts.tsx";
-import * as $$$$$$2 from "./sections/Faq.tsx";
-import * as $$$$$$3 from "./sections/Footer.tsx";
-import * as $$$$$$4 from "./sections/Header.tsx";
-import * as $$$$$$5 from "./sections/Hero.tsx";
-import * as $$$$$$6 from "./sections/ImageWithParagraph.tsx";
-import * as $$$$$$7 from "./sections/InstagramEmbed.tsx";
-import * as $$$$$$8 from "./sections/Logos.tsx";
-import * as $$$$$$9 from "./sections/MainPost.tsx";
-import * as $$$$$$10 from "./sections/Testimonials.tsx";
-import * as $$$$$$11 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$2 from "./sections/CategoryHero.tsx";
+import * as $$$$$$3 from "./sections/Faq.tsx";
+import * as $$$$$$4 from "./sections/Footer.tsx";
+import * as $$$$$$5 from "./sections/Header.tsx";
+import * as $$$$$$6 from "./sections/Hero.tsx";
+import * as $$$$$$7 from "./sections/ImageWithParagraph.tsx";
+import * as $$$$$$8 from "./sections/InstagramEmbed.tsx";
+import * as $$$$$$9 from "./sections/Logos.tsx";
+import * as $$$$$$10 from "./sections/MainPost.tsx";
+import * as $$$$$$11 from "./sections/Testimonials.tsx";
+import * as $$$$$$12 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
+  "functions": {
+    "site/functions/requestToParam.ts": $0,
+  },
+  "loaders": {
+    "site/loaders/categoryFromUrl.ts": $$$0,
+  },
   "sections": {
     "site/sections/BlogPost.tsx": $$$$$$0,
     "site/sections/BlogPosts.tsx": $$$$$$1,
-    "site/sections/Faq.tsx": $$$$$$2,
-    "site/sections/Footer.tsx": $$$$$$3,
-    "site/sections/Header.tsx": $$$$$$4,
-    "site/sections/Hero.tsx": $$$$$$5,
-    "site/sections/ImageWithParagraph.tsx": $$$$$$6,
-    "site/sections/InstagramEmbed.tsx": $$$$$$7,
-    "site/sections/Logos.tsx": $$$$$$8,
-    "site/sections/MainPost.tsx": $$$$$$9,
-    "site/sections/Testimonials.tsx": $$$$$$10,
-    "site/sections/Theme/Theme.tsx": $$$$$$11,
+    "site/sections/CategoryHero.tsx": $$$$$$2,
+    "site/sections/Faq.tsx": $$$$$$3,
+    "site/sections/Footer.tsx": $$$$$$4,
+    "site/sections/Header.tsx": $$$$$$5,
+    "site/sections/Hero.tsx": $$$$$$6,
+    "site/sections/ImageWithParagraph.tsx": $$$$$$7,
+    "site/sections/InstagramEmbed.tsx": $$$$$$8,
+    "site/sections/Logos.tsx": $$$$$$9,
+    "site/sections/MainPost.tsx": $$$$$$10,
+    "site/sections/Testimonials.tsx": $$$$$$11,
+    "site/sections/Theme/Theme.tsx": $$$$$$12,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,
