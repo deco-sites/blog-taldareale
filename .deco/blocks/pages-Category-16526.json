@@ -8,17 +8,22 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/BlogPosts.tsx",
+        "__resolveType": "site/sections/CategoryHero.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/GenericFilterBlogPost.tsx",
         "posts": {
           "__resolveType": "blog/loaders/BlogpostList.ts",
-          "count": 6,
-          "sortBy": "date_desc",
-          "category": {
+          "count": 1000,
+          "sortBy": "date_desc"
+        },
+        "filters": {
+          "categorySlug": {
             "__resolveType": "site/loaders/categoryFromUrl.ts"
           }
-        },
-        "cta": {
-          "text": "Ver mais"
         }
       }
     },

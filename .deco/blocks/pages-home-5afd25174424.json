@@ -14,23 +14,30 @@
       "__resolveType": "MainPost (Not Lazy)"
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/BlogPosts.tsx",
-        "cta": {
-          "text": "Ver mais"
+      "__resolveType": "site/sections/ImageTextCards.tsx",
+      "sectionTitle": "Nossos Serviços",
+      "cardsPerRow": 3,
+      "gap": "medium",
+      "cards": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
+          "alt": "Jóias personalizadas",
+          "title": "Jóias Personalizadas",
+          "description": "Criamos peças únicas e exclusivas para você"
         },
-        "posts": {
-          "__resolveType": "blog/loaders/BlogpostList.ts",
-          "count": 1000,
-          "page": 1,
-          "sortBy": "date_desc"
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/6fe9404a-f420-4501-9a4d-a3b5d2fd0aec",
+          "alt": "Conserto de jóias",
+          "title": "Conserto e Manutenção",
+          "description": "Restauramos suas jóias com cuidado e precisão"
         },
-        "pagination": {
-          "perPage": 3,
-          "page": 0
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
+          "alt": "Avaliação de jóias",
+          "title": "Avaliação Profissional",
+          "description": "Avaliamos suas peças com certificação especializada"
         }
-      }
+      ]
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

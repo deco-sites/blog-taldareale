@@ -1,78 +1,57 @@
-import { useScript } from "deco/hooks/useScript.ts";
+import { LoaderContext } from "deco/types.ts";
 
 export interface Props {
   /**
-   * @title Category Name
-   * @description The category name from URL parameter
+   * @title Category Slug
+   * @description The category slug from URL parameter
    */
-  categoryName?: string;
-  
-  /**
-   * @title Page Title
-   * @description Custom title for the category page
-   */
-  title?: string;
-  
-  /**
-   * @title Description
-   * @description Description for the category
-   */
-  description?: string;
+  categorySlug?: string;
 }
 
-const script = () => {
-  // Get category from URL parameter
-  const urlPath = window.location.pathname;
-  const categorySlug = urlPath.split('/categorias/')[1];
+export const loader = (props: Props, req: Request, ctx: LoaderContext) => {
+  // Get the URL and extract the pathname
+  const url = new URL(req.url);
+  const pathname = url.pathname;
   
-  if (categorySlug) {
-    // Capitalize first letter and replace hyphens with spaces
-    const categoryName = categorySlug
-      .split('-')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
-    
-    // Update the category name in the title
-    const titleElement = document.querySelector('[data-category-title]');
-    if (titleElement) {
-      titleElement.textContent = `Categoria: ${categoryName}`;
-    }
-    
-    // Update page title
-    document.title = `${categoryName} - Blog Tal da Realeza`;
-    
-    // Update meta description
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', `Confira todos os posts sobre ${categoryName} no blog da Tal da Realeza. Dicas, tendências e muito mais!`);
+  // Match the pattern /categorias/:category
+  const match = pathname.match(/\/categorias\/([^\/\?]+)/);
+  
+  let categorySlug = null;
+  if (match && match[1]) {
+    // Skip if it's a template parameter (starts with :)
+    if (!match[1].startsWith(':')) {
+      // Decode URI component to handle special characters
+      categorySlug = decodeURIComponent(match[1]);
     }
   }
+  
+  return {
+    ...props,
+    categorySlug
+  };
 };
 
 export default function CategoryHero({
-  categoryName,
-  title,
-  description = "Confira todos os posts desta categoria"
+  categorySlug
 }: Props) {
+  // If no category slug, don't render anything
+  if (!categorySlug) {
+    return null;
+  }
+
+  // Convert slug to uppercase for display
+  const categoryName = categorySlug.toUpperCase();
+  
   return (
-    <>
-      <script
-        type="module"
-        dangerouslySetInnerHTML={{ __html: useScript(script) }}
-      />
-      <div class="container lg:mx-auto lg:py-14 mx-2 py-12">
-        <div class="text-center space-y-4">
-          <h1 
-            class="text-4xl lg:text-6xl font-bold"
-            data-category-title
-          >
-            {title || "Categoria"}
-          </h1>
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-            {description}
-          </p>
-        </div>
+    <div class="container lg:mx-auto lg:py-14 mx-2 py-12">
+      <div class="text-center space-y-4">
+        <h1 class="text-4xl lg:text-6xl font-bold">
+          {categoryName}
+        </h1>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Confira todas os posts sobre {categoryName.toLowerCase()}
+        </p>
       </div>
-    </>
+    </div>
   );
 }

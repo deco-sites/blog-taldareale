@@ -78,23 +78,25 @@ export default function BlogPosts({
   return (
     <ContainerComponent>
       <>
-        <div class="gap-8 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
+        <div class="gap-8 grid grid-cols-1">
           {posts?.slice(from, to).map((post) => (
             <a
               href={`/${post.slug}`}
-              class="border border-secondary overflow-hidden rounded-lg"
+              class="border border-secondary overflow-hidden rounded-lg flex flex-col md:flex-row gap-4"
             >
-              <Image
-                width={380}
-                height={274}
-                class="object-fit w-full"
-                sizes="(max-width: 640px) 100vw, 30vw"
-                src={post.image || ""}
-                alt={post.image}
-                decoding="async"
-                loading="lazy"
-              />
-              <div class="p-6 space-y-4">
+              <div class="md:w-1/3 flex-shrink-0">
+                <Image
+                  width={380}
+                  height={274}
+                  class="object-cover w-full h-48 md:h-full"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  src={post.image || ""}
+                  alt={post.image}
+                  decoding="async"
+                  loading="lazy"
+                />
+              </div>
+              <div class="p-6 space-y-4 md:w-2/3">
                 <div class="font-semibold">
                   {calculateReadingTime(post.content.split(" ").length)}
                 </div>

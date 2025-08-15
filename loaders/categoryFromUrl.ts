@@ -17,6 +17,11 @@ export default function categoryFromUrl(
   const match = pathname.match(/\/categorias\/([^\/\?]+)/);
   
   if (match && match[1]) {
+    // Skip if it's a template parameter (starts with :)
+    if (match[1].startsWith(':')) {
+      return null;
+    }
+    
     // Decode URI component to handle special characters
     const category = decodeURIComponent(match[1]);
     return category;
