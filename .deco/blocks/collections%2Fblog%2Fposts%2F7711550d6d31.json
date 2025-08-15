@@ -1,0 +1,11 @@
+{
+  "name": "collections/blog/posts/7711550d6d31",
+  "__resolveType": "blog/loaders/Blogpost.ts",
+  "post": {
+    "authors": [],
+    "categories": [],
+    "title": "Teste",
+    "content": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.instagram.com/p/C_RE3oVy6of/\">https://www.instagram.com/p/C_RE3oVy6of/</a></p>",
+    "excerpt": " "
+  }
+}
