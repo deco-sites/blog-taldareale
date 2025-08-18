@@ -78,69 +78,62 @@ export default function BlogPosts({
   return (
     <ContainerComponent>
       <>
-        <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="gap-8 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
           {posts?.slice(from, to).map((post) => (
-            <div class="post-container">
-              <a
-                href={`/${post.slug}`}
-                class="border border-secondary overflow-hidden rounded-lg flex flex-col md:flex-row gap-4"
-              >
-                <div class="md:w-full flex-shrink-0">
-                  <Image
-                    width={380}
-                    height={274}
-                    class="object-cover w-full h-48 md:h-full"
-                    sizes="100vw"
-                    src={post.image || ""}
-                    alt={post.image}
-                    decoding="async"
-                    loading="lazy"
-                  />
+            <a
+              href={`/${post.slug}`}
+              class="border border-secondary overflow-hidden rounded-lg"
+            >
+              <Image
+                width={380}
+                height={274}
+                class="object-fit w-full"
+                sizes="(max-width: 640px) 100vw, 30vw"
+                src={post.image || ""}
+                alt={post.image}
+                decoding="async"
+                loading="lazy"
+              />
+              <div class="p-6 space-y-4">
+                <div class="font-semibold">
+                  {calculateReadingTime(post.content.split(" ").length)}
                 </div>
-                <div class="p-6 space-y-4 md:w-full">
-                  <div class="font-semibold">
-                    {calculateReadingTime(post.content.split(" ").length)}
-                  </div>
-                  <div class="space-y-2">
-                    <h3 class="text-lg md:text-xl lg:text-2xl break-words">{post.title}</h3>
-                    <p class="text-base">{post.excerpt}</p>
-                  </div>
-                  <div class="flex flex-wrap gap-2">
-                    {post.categories?.map((category) => (
-                      <a
-                        href={`/categorias/${category.slug}`}
-                        style="
-                          background-color: black; /* Preenchimento preto */
-                          color: white;           /* Texto em branco */
-                          padding: 10px 10px;    /* Espaçamento interno */
-                          border: none;           /* Remove a borda padrão */
-                          border-radius: 25px;    /* Borda arredondada */
-                          text-decoration: none;
-                          display: inline-flex;
-                          align-items: center;
-                          justify-content: center;
-                        "
-                        class="badge badge-lg badge-primary text-xs hover:opacity-80">
-                        {category.name}
-                      </a>
-                    ))}
-                  </div>
-                  <div class="flex flex-wrap gap-2">
-                    <span>
-                      {post.date
-                        ? new Date(post.date).toLocaleDateString("pt-BR", {
-                          day: "numeric",
-                          month: "long",
-                          year: "numeric",
-                        })
-                        : ""}
-                    </span>
-                    <span>•</span>
-                    <span>{post.authors[0]?.name}</span>
-                  </div>
+                <div class="space-y-2">
+                  <h3 class="text-2xl">{post.title}</h3>
+                  <p class="text-base">{post.excerpt}</p>
                 </div>
-              </a>
-            </div>
+                <div class="flex flex-wrap gap-2">
+                  {post.categories?.map((category) => (
+                    <div
+                      style="
+                        background-color: black; /* Preenchimento preto */
+                        color: white;           /* Texto em branco */
+                        padding: 10px 10px;    /* Espaçamento interno */
+                        border: none;           /* Remove a borda padrão */
+                        border-radius: 25px;    /* Borda arredondada */
+                      "
+                      href={`/${post.slug}`}
+                      class="badge badge-lg badge-primary text-xs">
+                      {category.name}
+
+                    </div>
+                  ))}
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span>
+                    {post.date
+                      ? new Date(post.date).toLocaleDateString("pt-BR", {
+                        day: "numeric",
+                        month: "long",
+                        year: "numeric",
+                      })
+                      : ""}
+                  </span>
+                  <span>•</span>
+                  <span>{post.authors[0]?.name}</span>
+                </div>
+              </div>
+            </a>
           ))}
         </div>
         {posts && to < posts.length && (
