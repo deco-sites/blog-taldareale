@@ -17,7 +17,14 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/BlogPosts.tsx",
-        "posts": null
+        "posts": null,
+        "cta": {
+          "text": "Ver mais"
+        },
+        "pagination": {
+          "page": 0,
+          "perPage": 3
+        }
       }
     },
     {

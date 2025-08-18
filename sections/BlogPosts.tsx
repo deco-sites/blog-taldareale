@@ -78,7 +78,7 @@ export default function BlogPosts({
   return (
     <ContainerComponent>
       <>
-        <div class = "gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {posts?.slice(from, to).map((post) => (
             <div class="post-container">
               <a
@@ -107,7 +107,7 @@ export default function BlogPosts({
                   </div>
                   <div class="flex flex-wrap gap-2">
                     {post.categories?.map((category) => (
-                      <a 
+                      <a
                         href={`/categorias/${category.slug}`}
                         style="
                           background-color: black; /* Preenchimento preto */
