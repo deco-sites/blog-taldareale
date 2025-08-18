@@ -34,6 +34,11 @@ export interface Props {
     /** @title items per page */
     perPage?: number;
   };
+  /**
+   * @title Category Slug
+   * @description Category slug to filter posts (extracted from URL)
+   */
+  categorySlug?: string;
 }
 
 function Container({ children }: { children: ComponentChildren }) {
@@ -44,74 +49,22 @@ function Container({ children }: { children: ComponentChildren }) {
   );
 }
 
-export const loader = async (props: Props, req: Request, ctx: AppContext) => {
-  const url = new URL(req.url);
-  const pathSegments = url.pathname.split('/');
-  
-  // Procura pelo segmento "categorias" e pega o próximo como categoria
-  const categoriaIndex = pathSegments.findIndex(segment => segment === 'categorias');
-  const categorySlug = categoriaIndex !== -1 && categoriaIndex + 1 < pathSegments.length 
-    ? pathSegments[categoriaIndex + 1] 
-    : null;
-
-  console.log('URL:', url.pathname);
-  console.log('Category slug:', categorySlug);
-
-  // Se não há categoria na URL, retorna props originais
-  if (!categorySlug) {
-    console.log('No category slug found');
-    return props;
-  }
-
-  try {
-    // Busca todos os posts usando o loader do blog
-    const allPosts = await ctx.invoke("blog/loaders/BlogpostList.ts", {
-      sortBy: "date_desc",
-      count: 100 // Adiciona um limite maior para garantir que busque todos os posts
-    });
-
-    console.log('All posts count:', allPosts?.length || 0);
-
-    // Filtra posts que têm a categoria com o slug correspondente
-    const filteredPosts = allPosts?.filter(post => {
-      // Verifica se o post e suas categorias existem
-      if (!post || !post.categories || !Array.isArray(post.categories)) {
-        return false;
-      }
-      
-      const hasCategory = post.categories.some(category => 
-        category && category.slug === categorySlug
-      );
-      
-      if (hasCategory) {
-        console.log('Found post with category:', post.title);
-      }
-      return hasCategory;
-    }) || [];
-
-    console.log('Filtered posts count:', filteredPosts.length);
-
-    return {
-      ...props,
-      posts: filteredPosts,
-    };
-  } catch (error) {
-    console.error('Error in loader:', error);
-    return {
-      ...props,
-      posts: [],
-    };
-  }
-};
-
-export default function BlogPostsByCategory({
+export default function BlogPostsToCategoryPages({
   cta = { text: "Mostre mais" },
   posts,
   pagination: {
     page = 0,
     perPage = 6,
   } = {},
+  categorySlug,
 }: Props) {
+  // Filter posts by category slug if provided
+  const filteredPosts = categorySlug 
+    ? posts?.filter(post => 
+        post.categories?.some(category => category.slug === categorySlug)
+      ) || []
+    : posts || [];
+
   const from = perPage * page;
   const to = perPage * (page + 1);
 
@@ -123,6 +76,7 @@ export default function BlogPostsByCategory({
     // Renders this section with the next page
     props: {
       pagination: { perPage, page: page + 1 },
+      categorySlug,
     },
   });
 
@@ -140,21 +94,21 @@ export default function BlogPostsByCategory({
     <ContainerComponent>
       <>
         <div class="gap-8 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
-          {posts?.slice(from, to).map((post) => (
+          {filteredPosts.slice(from, to).map((post) => (
             <a
               href={`/${post.slug}`}
               class="border border-secondary overflow-hidden rounded-lg"
             >
-                <Image
-                  width={380}
-                  height={274}
-                  class="object-fit w-full"
-                  sizes="(max-width: 640px) 100vw, 30vw"
-                  src={post.image || ""}
-                  alt={post.image}
-                  decoding="async"
-                  loading="lazy"
-                />
+              <Image
+                width={380}
+                height={274}
+                class="object-fit w-full"
+                sizes="(max-width: 640px) 100vw, 30vw"
+                src={post.image || ""}
+                alt={post.image}
+                decoding="async"
+                loading="lazy"
+              />
               <div class="p-6 space-y-4">
                 <div class="font-semibold">
                   {calculateReadingTime(post.content.split(" ").length)}
@@ -165,8 +119,7 @@ export default function BlogPostsByCategory({
                 </div>
                 <div class="flex flex-wrap gap-2">
                   {post.categories?.map((category) => (
-                    <div 
-                      href={`/categorias/${category.slug}`}
+                    <div
                       style="
                         background-color: black; /* Preenchimento preto */
                         color: white;           /* Texto em branco */
@@ -177,6 +130,7 @@ export default function BlogPostsByCategory({
                       href={`/${post.slug}`}
                       class="badge badge-lg badge-primary text-xs">
                       {category.name}
+
                     </div>
                   ))}
                 </div>
@@ -197,7 +151,7 @@ export default function BlogPostsByCategory({
             </a>
           ))}
         </div>
-        {posts && to < posts.length && (
+        {filteredPosts && to < filteredPosts.length && (
           <div class="flex justify-center w-full" id={postList}>
             <button
               style="
@@ -224,3 +178,40 @@ export default function BlogPostsByCategory({
     </ContainerComponent>
   );
 }
+
+/**
+ * Loader to extract category slug from URL and filter posts
+ */
+export const loader = async (props: Props, req: Request, ctx: AppContext) => {
+  const url = new URL(req.url);
+  const pathSegments = url.pathname.split('/').filter(Boolean);
+  
+  // Extract category slug from URL path
+  // Assuming URL structure like /categories/[slug] or /category/[slug]
+  let categorySlug: string | undefined;
+  
+  const categoryIndex = pathSegments.findIndex(segment => 
+    segment === 'categories' || segment === 'category'
+  );
+  
+  if (categoryIndex !== -1 && pathSegments[categoryIndex + 1]) {
+    categorySlug = pathSegments[categoryIndex + 1];
+  }
+  
+  // If no posts provided, try to load all posts
+  let posts = props.posts;
+  if (!posts) {
+    try {
+      posts = await ctx.invoke("blog/loaders/posts.ts", {});
+    } catch (error) {
+      console.error("Error loading posts:", error);
+      posts = [];
+    }
+  }
+  
+  return {
+    ...props,
+    posts,
+    categorySlug,
+  };
+};
