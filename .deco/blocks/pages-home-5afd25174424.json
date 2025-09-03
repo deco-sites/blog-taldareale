@@ -17,13 +17,13 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/BlogPosts.tsx",
-        "posts": null,
-        "cta": {
-          "text": "Ver mais"
+        "posts": {
+          "__resolveType": "blog/loaders/BlogpostList.ts",
+          "count": 6,
+          "sortBy": "date_desc"
         },
-        "pagination": {
-          "page": 0,
-          "perPage": 3
+        "cta": {
+          "text": "Ver Mais"
         }
       }
     },
