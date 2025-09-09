@@ -18,7 +18,7 @@ const categoriesData = {
     "title": "Piercings",
     "description": "Explore o universo dos piercings e descubra como expressar sua individualidade. Nesta seção, você encontra guias completos sobre os diferentes tipos de perfuração, dicas de cuidados essenciais para uma cicatrização perfeita e inspirações para escolher a joia que mais combina com você."
   },
-  "corentes-e-colares": {
+  "correntes-e-colares": {
     "title": "Correntes e colares",
     "description": "Do clássico ao contemporâneo, encontre a joia perfeita para cada momento. Explore nossa seleção de correntes e colares, aprenda a criar mix de peças cheios de personalidade e descubra como um simples acessório pode transformar completamente o seu look, adicionando um toque de sofisticação e brilho."
   },
