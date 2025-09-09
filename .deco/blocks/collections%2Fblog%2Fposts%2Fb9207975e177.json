@@ -12,8 +12,12 @@
     ],
     "categories": [
       {
-        "name": "Dicas",
-        "slug": "dicas"
+        "name": "Joias e acessórios",
+        "slug": "joias-e-acessorios"
+      },
+      {
+        "name": "Anéis e alianças",
+        "slug": "aneis-e-aliancas"
       }
     ],
     "title": "Joias para noivas: 5 peças essenciais para o grande dia",

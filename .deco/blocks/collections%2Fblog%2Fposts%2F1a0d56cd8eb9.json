@@ -12,8 +12,13 @@
     ],
     "categories": [
       {
+        "name": "Dicas",
+        "slug": "dicas"
+      },
+      {
         "name": "Piercings",
-        "slug": "piercings"
+        "slug": "piercings",
+        "description": "Teste"
       }
     ],
     "title": "Meu piercing inflamou! E agora?",
