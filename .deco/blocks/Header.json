@@ -4,19 +4,64 @@
     "links": [
       {
         "label": "Home",
-        "url": "https://blog.taldarealeza.com.br"
-      },
-      {
-        "label": "Dicas",
-        "url": "https://blog.taldarealeza.com.br/categorias/dicas"
-      },
-      {
-        "label": "Estilo e tendências",
-        "url": "https://blog.taldarealeza.com.br/categorias/estilo-e-tendencias"
+        "url": "https://blog.taldarealeza.com.br",
+        "children": []
       },
       {
         "label": "Joias e acessórios",
-        "url": "https://blog.taldarealeza.com.br/categorias/joias-e-acessorios"
+        "url": "https://blog.taldarealeza.com.br/categorias/joias-e-acessorios",
+        "children": [
+          {
+            "children": [],
+            "label": "Piercings",
+            "url": "https://blog.taldarealeza.com.br/categorias/piercings"
+          },
+          {
+            "children": [],
+            "url": "https://blog.taldarealeza.com.br/categorias/correntes-e-colares",
+            "label": "Correntes e colares"
+          },
+          {
+            "children": [],
+            "label": "Broches",
+            "url": "https://blog.taldarealeza.com.br/categorias/broches"
+          },
+          {
+            "children": [],
+            "label": "Anéis e alianças",
+            "url": "https://blog.taldarealeza.com.br/categorias/aneis-e-aliancas"
+          }
+        ]
+      },
+      {
+        "label": "Estilo e tendências",
+        "url": "https://blog.taldarealeza.com.br/categorias/estilo-e-tendencias",
+        "children": [
+          {
+            "children": [],
+            "label": "Celebridades",
+            "url": "https://blog.taldarealeza.com.br/categorias/celebridades"
+          }
+        ]
+      },
+      {
+        "label": "Dicas",
+        "url": "https://blog.taldarealeza.com.br/categorias/dicas",
+        "children": [
+          {
+            "children": [],
+            "label": "Presentes",
+            "url": "https://blog.taldarealeza.com.br/categorias/presentes"
+          },
+          {
+            "children": [],
+            "label": "Ocasiões especiais",
+            "url": "https://blog.taldarealeza.com.br/categorias/ocasioes-especiais"
+          }
+        ]
+      },
+      {
+        "children": []
       }
     ],
     "buttons": [

@@ -10,16 +10,20 @@ export interface CTA {
   outline?: boolean;
 }
 
+// 1. Modifique a interface Link para suportar sub-links
+export interface Link {
+  label?: string;
+  url?: string;
+  children?: Link[]; // Adiciona a propriedade 'children' para o dropdown
+}
+
 export interface Nav {
   logo?: {
     src?: ImageWidget;
     alt?: string;
   };
   navigation?: {
-    links: {
-      label?: string;
-      url?: string;
-    }[];
+    links: Link[]; // Usa a nova interface Link
     buttons: CTA[];
   };
 }
@@ -58,6 +62,15 @@ export default function Haader({
       { label: "About us", url: "/" },
       { label: "Princing", url: "/" },
       { label: "Contact", url: "/" },
+      // 2. Exemplo de link com dropdown
+      {
+        label: "Serviços",
+        children: [
+          { label: "Desenvolvimento Web", url: "/servicos/web" },
+          { label: "Design UX/UI", url: "/servicos/design" },
+          { label: "Consultoria", url: "/servicos/consultoria" },
+        ],
+      },
     ],
     buttons: [
       { id: "change-me-1", href: "/", text: "Change me", outline: false },
@@ -65,6 +78,52 @@ export default function Haader({
     ],
   },
 }: Nav) {
+  // Função para renderizar os links de forma recursiva (para suportar sub-níveis, se necessário)
+  const renderLinks = (links: Link[]) => {
+    return links.map((link, index) => {
+      // 3. Verifique se o link tem filhos para criar o dropdown
+      if (link.children && link.children.length > 0) {
+        return (
+          <li key={index} class="relative group">
+            <a
+              href={link.url || "#"}
+              aria-label={link.label}
+              class="link no-underline hover:underline p-4"
+            >
+              {link.label}
+            </a>
+            {/* 4. Renderize o dropdown usando classes do Tailwind CSS */}
+            <ul class="absolute top-full left-0 hidden group-hover:block bg-white shadow-lg py-2 z-50 min-w-[200px]">
+              {link.children.map((child, childIndex) => (
+                <li key={childIndex}>
+                  <a
+                    href={child.url}
+                    class="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    {child.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </li>
+        );
+      } else {
+        // Renderize um link normal
+        return (
+          <li key={index}>
+            <a
+              href={link.url}
+              aria-label={link.label}
+              class="link no-underline hover:underline p-4"
+            >
+              {link.label}
+            </a>
+          </li>
+        );
+      }
+    });
+  };
+
   return (
     <nav class="container mx-auto lg:px-0 px-4">
       <div class="flex gap-8 items-center justify-between py-4">
@@ -72,6 +131,7 @@ export default function Haader({
           <Image src={logo.src || ""} width={100} height={28} alt={logo.alt} />
         </a>
 
+        {/* Menu Mobile */}
         <label
           class="cursor-pointer lg:hidden pt-6 relative z-40"
           for="menu-mobile"
@@ -86,13 +146,7 @@ export default function Haader({
           <div class="duration-500 fixed h-full overflow-y-auto overscroll-y-none peer-checked:translate-x-0 right-0 top-0 transition translate-x-full w-full z-40">
             <div class="bg-base-100 flex flex-col float-right gap-8 min-h-full pt-12 px-6 shadow-2xl w-1/2">
               <ul class="flex flex-col gap-8">
-                {navigation?.links.map((link) => (
-                  <li>
-                    <a href={link.url} aria-label={link.label}>
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
+                {renderLinks(navigation.links)}
               </ul>
               <ul class="flex items-center gap-3">
                 {navigation.buttons?.map((item) => (
@@ -113,27 +167,18 @@ export default function Haader({
           </div>
         </label>
 
+        {/* Menu Desktop */}
         <ul class="hidden items-center justify-between lg:flex">
           <ul class="flex">
-            {navigation.links.map((link) => (
-              <li>
-                <a
-                  href={link.url}
-                  aria-label={link.label}
-                  class="link no-underline hover:underline p-4"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
+            {renderLinks(navigation.links)}
           </ul>
           <ul class="flex gap-3">
             {navigation.buttons?.map((item) => (
               <a
-                style="background-color: black; /* Preenchimento preto */
-                  color: white;           /* Texto em branco */
-                  padding: 10px 20px;    /* Espaçamento interno */
-                  border: none;           /* Remove a borda padrão */
+                style="background-color: black; 
+                  color: white;
+                  padding: 10px 20px;
+                  border: none;
                   border-radius: 5px;"
                 key={item?.id}
                 id={item?.id}
