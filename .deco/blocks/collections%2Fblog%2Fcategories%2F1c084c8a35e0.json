@@ -1,1 +1,9 @@
-{"name":"collections/blog/categories/1c084c8a35e0","__resolveType":"blog/loaders/Category.ts","category":{"name":"Piercings","slug":"piercings"}}
+{
+  "name": "collections/blog/categories/1c084c8a35e0",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Piercings",
+    "slug": "piercings",
+    "description": "Teste"
+  }
+}

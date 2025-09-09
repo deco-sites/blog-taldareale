@@ -8,14 +8,19 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/CategoryHero.tsx"
+        "__resolveType": "site/sections/Hero.tsx",
+        "title": "<p> </p>",
+        "description": " "
       }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/BlogPostsByCategory.tsx",
-        "posts": null
+        "posts": null,
+        "cta": {
+          "text": "Ver Mais"
+        }
       }
     },
     {
