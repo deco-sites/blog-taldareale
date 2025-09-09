@@ -91,6 +91,9 @@ export default function Haader({
               class="link no-underline hover:underline p-4"
             >
               {link.label}
+              <span class="inline-block ml-1 transition-transform group-hover:rotate-180">
+                ▼
+              </span>
             </a>
             {/* 4. Renderize o dropdown usando classes do Tailwind CSS */}
             <ul class="absolute top-full left-0 hidden group-hover:block bg-white shadow-lg py-2 z-50 min-w-[200px]">
