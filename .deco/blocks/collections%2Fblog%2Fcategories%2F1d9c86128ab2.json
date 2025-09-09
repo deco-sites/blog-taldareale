@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/1d9c86128ab2",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Ocasiões especiais",
+    "slug": "ocasioes-especiais"
+  }
+}

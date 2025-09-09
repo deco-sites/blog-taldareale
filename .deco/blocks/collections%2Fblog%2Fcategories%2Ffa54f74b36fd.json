@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/fa54f74b36fd",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Estilo e tendências",
+    "slug": "estilo-e-tendencias"
+  }
+}

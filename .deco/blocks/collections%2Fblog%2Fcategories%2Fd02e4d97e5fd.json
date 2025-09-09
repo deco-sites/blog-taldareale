@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/d02e4d97e5fd",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Joias e acessórios",
+    "slug": "joias-e-acessorios"
+  }
+}

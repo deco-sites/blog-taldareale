@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/5d0c62170f0a",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Presentes",
+    "slug": "presentes"
+  }
+}

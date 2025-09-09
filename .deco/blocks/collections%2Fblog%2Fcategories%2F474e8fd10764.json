@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/474e8fd10764",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Celebridades",
+    "slug": "celebridades"
+  }
+}
