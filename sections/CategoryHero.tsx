@@ -109,7 +109,7 @@ export default function CategoryHero({
     <div class="container lg:mx-auto lg:py-14 mx-2 py-12">
       <div class="text-center space-y-4">
         <h1 class="text-4xl lg:text-6xl font-bold">
-          {categoryName.toUpperCase()}
+          {title.toUpperCase()}
         </h1>
         <p class="text-lg text-gray-600 max-w-2xl mx-auto">
           {description}
