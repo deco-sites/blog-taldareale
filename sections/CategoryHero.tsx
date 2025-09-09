@@ -2,7 +2,7 @@ import { LoaderContext } from "deco/types.ts";
 
 // 1. Defina o objeto JSON com os dados das categorias.
 const categoriesData = {
-  "joias-e-acessorioes": {
+  "joias-e-acessorios": {
     "title": "Joias e acessórios",
     "description": "Explore o universo fascinante das joias e acessórios.Aqui, você descobre a história por trás de cada peça, aprende sobre os diferentes materiais e encontra o significado especial que torna cada acessório único. A escolha perfeita para quem ama conhecer os detalhes que fazem a diferença."
   },
