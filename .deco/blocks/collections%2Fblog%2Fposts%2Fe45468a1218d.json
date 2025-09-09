@@ -12,8 +12,12 @@
     ],
     "categories": [
       {
-        "name": "Correntes",
-        "slug": "correntes"
+        "name": "Joias e acessórios",
+        "slug": "joias-e-acessorios"
+      },
+      {
+        "name": "Correntes e colares",
+        "slug": "correntes-e-colares"
       }
     ],
     "title": "Tipos de corrente: 8 modelos incríveis para realçar o seu estilo",
