@@ -12,8 +12,13 @@
     ],
     "categories": [
       {
+        "name": "Joias e acessórios",
+        "slug": "joias-e-acessorios"
+      },
+      {
         "name": "Piercings",
-        "slug": "piercings"
+        "slug": "piercings",
+        "description": "Teste"
       }
     ],
     "title": "Vai colocar um piercing? Confira tudo o que você precisa saber",
