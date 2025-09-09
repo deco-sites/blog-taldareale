@@ -8,9 +8,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Hero.tsx",
-        "title": "<p> </p>",
-        "description": " "
+        "__resolveType": "site/sections/CategoryHero.tsx"
       }
     },
     {
