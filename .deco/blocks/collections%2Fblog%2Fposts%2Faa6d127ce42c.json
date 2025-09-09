@@ -12,8 +12,13 @@
     ],
     "categories": [
       {
+        "name": "Joias e acessórios",
+        "slug": "joias-e-acessorios"
+      },
+      {
         "name": "Piercings",
-        "slug": "piercings"
+        "slug": "piercings",
+        "description": "Teste"
       }
     ],
     "title": "Piercing no septo: o guia definitivo para transformar o seu visual",

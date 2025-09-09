@@ -12,8 +12,12 @@
     ],
     "categories": [
       {
-        "name": "Piercings",
-        "slug": "piercings"
+        "name": "Estilo e tendências",
+        "slug": "estilo-e-tendencias"
+      },
+      {
+        "name": "Celebridades",
+        "slug": "celebridades"
       }
     ],
     "title": "Chappell Roan: por dentro do estilo ousado e criativo da revelação do pop",

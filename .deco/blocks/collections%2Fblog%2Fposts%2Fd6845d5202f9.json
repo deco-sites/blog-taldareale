@@ -12,8 +12,12 @@
     ],
     "categories": [
       {
-        "name": "Dicas",
-        "slug": "dicas"
+        "name": "Joias e acessórios",
+        "slug": "joias-e-acessorios"
+      },
+      {
+        "name": "Anéis e alianças",
+        "slug": "aneis-e-aliancas"
       }
     ],
     "title": "Descubra o significado do anel em cada dedo da mão",

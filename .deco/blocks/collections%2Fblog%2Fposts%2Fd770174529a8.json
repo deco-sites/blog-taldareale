@@ -12,8 +12,12 @@
     ],
     "categories": [
       {
-        "name": "Correntes",
-        "slug": "correntes"
+        "name": "Joias e acessórios",
+        "slug": "joias-e-acessorios"
+      },
+      {
+        "name": "Correntes e colares",
+        "slug": "correntes-e-colares"
       }
     ],
     "slug": "corrente-grumet",

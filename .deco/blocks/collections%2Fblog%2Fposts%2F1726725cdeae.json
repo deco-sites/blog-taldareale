@@ -12,8 +12,12 @@
     ],
     "categories": [
       {
-        "name": "Dicas",
-        "slug": "dicas"
+        "name": "Estilo e tendências",
+        "slug": "estilo-e-tendencias"
+      },
+      {
+        "name": "Celebridades",
+        "slug": "celebridades"
       }
     ],
     "title": "Sabrina Carpenter: inspire-se no estilo da it girl do momento",
