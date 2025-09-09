@@ -12,8 +12,13 @@
     ],
     "categories": [
       {
+        "name": "Joias e acessórios",
+        "slug": "joias-e-acessorios"
+      },
+      {
         "name": "Piercings",
-        "slug": "piercings"
+        "slug": "piercings",
+        "description": "Teste"
       }
     ],
     "title": "Tipos de piercing: conheça as melhores opções para cada parte do corpo",

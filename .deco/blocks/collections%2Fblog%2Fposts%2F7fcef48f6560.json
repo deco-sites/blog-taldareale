@@ -12,8 +12,13 @@
     ],
     "categories": [
       {
+        "name": "Joias e acessórios",
+        "slug": "joias-e-acessorios"
+      },
+      {
         "name": "Piercings",
-        "slug": "piercings"
+        "slug": "piercings",
+        "description": "Teste"
       }
     ],
     "title": "11 tipos de piercing na orelha para transformar o seu visual",

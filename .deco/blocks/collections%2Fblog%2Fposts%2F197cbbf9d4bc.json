@@ -12,7 +12,11 @@
     ],
     "categories": [
       {
-        "name": "Broche",
+        "name": "Joias e acessórios",
+        "slug": "joias-e-acessorios"
+      },
+      {
+        "name": "Broches",
         "slug": "broches"
       }
     ],
