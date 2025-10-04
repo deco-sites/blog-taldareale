@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/94afdafa3c08",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Beleza",
+    "slug": "beleza"
+  }
+}

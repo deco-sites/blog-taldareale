@@ -42,6 +42,10 @@ const categoriesData = {
     "title": "Celebridades",
     "description": "Inspire-se no estilo das estrelas. Fique por dentro das joias e acessórios que as celebridades estão usando nos tapetes vermelhos e no dia a dia. Descubra as tendências lançadas pelas famosas e aprenda a adaptar esses looks para o seu próprio estilo."
   },
+  "beleza": {
+    "title": "Beleza",
+    "description": "Seu guia definitivo de beleza e autocuidado! Mergulhe em dicas preciosas de skincare, descubra os segredos dos maquiadores e encontre as melhores rotinas de cuidados para um cabelo forte e cheio de vida."
+  }
 };
 
 export interface Props {
