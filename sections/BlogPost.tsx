@@ -17,9 +17,11 @@ const CODE_BLOCK_STYLES =
 const IMAGE_STYLES = "[&_img]:rounded-2xl [&_img]:w-full [&_img]:my-12";
 const BLOCKQUOTE_STYLES =
   "[&>blockquote]:my-6 [&>blockquote]:border-l-2 [&>blockquote]:border-black [&>blockquote]:text-xl [&>blockquote]:italic [&>blockquote]:pl-6";
+const BUTTON_STYLES =
+  "[&_a.blog-button]:inline-block [&_a.blog-button]:px-6 [&_a.blog-button]:py-3 [&_a.blog-button]:bg-black [&_a.blog-button]:text-white [&_a.blog-button]:rounded-lg [&_a.blog-button]:font-semibold [&_a.blog-button]:no-underline [&_a.blog-button]:transition-all [&_a.blog-button]:hover:bg-gray-800 [&_a.blog-button]:my-6";
 
 const CONTENT_STYLES =
-  `max-w-3xl mx-auto ${PARAGRAPH_STYLES} ${HEADING_STYLES} ${CODE_BLOCK_STYLES} ${IMAGE_STYLES} ${BLOCKQUOTE_STYLES}`;
+  `max-w-3xl mx-auto ${PARAGRAPH_STYLES} ${HEADING_STYLES} ${CODE_BLOCK_STYLES} ${IMAGE_STYLES} ${BLOCKQUOTE_STYLES} ${BUTTON_STYLES}`;
 
 // Função para processar URLs do Instagram e converter em embeds
 function processInstagramEmbeds(content: string): string {
@@ -37,6 +39,51 @@ function processInstagramEmbeds(content: string): string {
       </div>
     `;
   });
+}
+
+// Função para processar botões HTML e transformá-los em botões estilizados
+function processButtons(content: string): string {
+  // Regex para detectar tags <button> ou <a> com classe específica ou data-button
+  const buttonRegex = /<button([^>]*)>(.*?)<\/button>/gi;
+  const linkButtonRegex = /<a([^>]*?)(?:\s+data-button(?:="true")?|\s+class="[^"]*button[^"]*")([^>]*)>(.*?)<\/a>/gi;
+  
+  // Processa tags <button>
+  let processed = content.replace(buttonRegex, (match, attributes, text) => {
+    // Extrai href se existir
+    const hrefMatch = attributes.match(/href=["']([^"']+)["']/i);
+    const href = hrefMatch ? hrefMatch[1] : '#';
+    
+    // Extrai classes existentes
+    const classMatch = attributes.match(/class=["']([^"']+)["']/i);
+    const existingClasses = classMatch ? classMatch[1] : '';
+    
+    return `<a href="${href}" class="blog-button ${existingClasses}">${text}</a>`;
+  });
+  
+  // Processa tags <a> com data-button ou classe button
+  processed = processed.replace(linkButtonRegex, (match, attr1, attr2, text) => {
+    const allAttributes = attr1 + attr2;
+    
+    // Extrai href
+    const hrefMatch = allAttributes.match(/href=["']([^"']+)["']/i);
+    const href = hrefMatch ? hrefMatch[1] : '#';
+    
+    // Extrai classes existentes e adiciona blog-button
+    const classMatch = allAttributes.match(/class=["']([^"']+)["']/i);
+    let classes = classMatch ? classMatch[1] : '';
+    
+    // Remove a classe 'button' se existir e adiciona 'blog-button'
+    classes = classes.replace(/\bbutton\b/g, '').trim();
+    classes = `blog-button ${classes}`.trim();
+    
+    // Extrai target se existir
+    const targetMatch = allAttributes.match(/target=["']([^"']+)["']/i);
+    const target = targetMatch ? ` target="${targetMatch[1]}"` : '';
+    
+    return `<a href="${href}" class="${classes}"${target}>${text}</a>`;
+  });
+  
+  return processed;
 }
 
 const DEFAULT_AVATAR =
@@ -89,8 +136,9 @@ export default function BlogPost({ page }: Props) {
     day: "numeric",
   });
 
-  // Processa o conteúdo para converter URLs do Instagram em embeds
-  const processedContent = processInstagramEmbeds(content);
+  // Processa o conteúdo para converter URLs do Instagram em embeds e botões
+  let processedContent = processInstagramEmbeds(content);
+  processedContent = processButtons(processedContent);
 
   return (
     <div className="w-full flex flex-col gap-20 container mx-auto px-4 md:px-0 py-12 lg:py-28">
