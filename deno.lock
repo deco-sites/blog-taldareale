@@ -7,7 +7,7 @@
       "jsr:@deco/durable@^0.5.3": "jsr:@deco/durable@0.5.3",
       "jsr:@deco/inspect-vscode@0.2.1": "jsr:@deco/inspect-vscode@0.2.1",
       "jsr:@deno/cache-dir@0.10.1": "jsr:@deno/cache-dir@0.10.1",
-      "jsr:@hono/hono@^4.5.4": "jsr:@hono/hono@4.9.9",
+      "jsr:@hono/hono@^4.5.4": "jsr:@hono/hono@4.9.10",
       "jsr:@luca/esbuild-deno-loader@0.10.3": "jsr:@luca/esbuild-deno-loader@0.10.3",
       "jsr:@std/assert@^0.213.1": "jsr:@std/assert@0.213.1",
       "jsr:@std/assert@^0.223.0": "jsr:@std/assert@0.223.0",
@@ -111,8 +111,8 @@
           "jsr:@std/path@^0.223"
         ]
       },
-      "@hono/hono@4.9.9": {
-        "integrity": "1d716e97b71e91b852c70beb85c9d3b236393282c59d5e268b07cfd224a77318"
+      "@hono/hono@4.9.10": {
+        "integrity": "b416cf3bf42e33353e37ea13df409b08bd9a67fabc5fca630f76924fbadb01e5"
       },
       "@luca/esbuild-deno-loader@0.10.3": {
         "integrity": "32fc93f7e7f78060234fd5929a740668aab1c742b808c6048b57f9aaea514921",
@@ -675,7 +675,7 @@
         "integrity": "sha512-FQzyfOsTlwVzjHxKEqRIAdJx9niO6VCBCoEwax/VLSoQF29ggECcPuBqUMZ+u8jCZOPSy8b8/8KnuFbp0SaFZQ==",
         "dependencies": {
           "browserslist": "browserslist@4.26.3",
-          "caniuse-lite": "caniuse-lite@1.0.30001747",
+          "caniuse-lite": "caniuse-lite@1.0.30001748",
           "fraction.js": "fraction.js@4.3.7",
           "normalize-range": "normalize-range@0.1.2",
           "picocolors": "picocolors@1.1.1",
@@ -687,8 +687,8 @@
         "integrity": "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==",
         "dependencies": {}
       },
-      "baseline-browser-mapping@2.8.11": {
-        "integrity": "sha512-i+sRXGhz4+QW8aACZ3+r1GAKMt0wlFpeA8M5rOQd0HEYw9zhDrlx9Wc8uQ0IdXakjJRthzglEwfB/yqIjO6iDg==",
+      "baseline-browser-mapping@2.8.12": {
+        "integrity": "sha512-vAPMQdnyKCBtkmQA6FMCBvU9qFIppS3nzyXnEM+Lo2IAhG4Mpjv9cCxMudhgV3YdNNJv6TNqXy97dfRVL2LmaQ==",
         "dependencies": {}
       },
       "binary-extensions@2.3.0": {
@@ -714,9 +714,9 @@
       "browserslist@4.26.3": {
         "integrity": "sha512-lAUU+02RFBuCKQPj/P6NgjlbCnLBMp4UtgTx7vNHd3XSIJF87s9a5rA3aH2yw3GS9DqZAUbOtZdCCiZeVRqt0w==",
         "dependencies": {
-          "baseline-browser-mapping": "baseline-browser-mapping@2.8.11",
-          "caniuse-lite": "caniuse-lite@1.0.30001747",
-          "electron-to-chromium": "electron-to-chromium@1.5.230",
+          "baseline-browser-mapping": "baseline-browser-mapping@2.8.12",
+          "caniuse-lite": "caniuse-lite@1.0.30001748",
+          "electron-to-chromium": "electron-to-chromium@1.5.231",
           "node-releases": "node-releases@2.0.23",
           "update-browserslist-db": "update-browserslist-db@1.1.3_browserslist@4.26.3"
         }
@@ -729,13 +729,13 @@
         "integrity": "sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==",
         "dependencies": {
           "browserslist": "browserslist@4.26.3",
-          "caniuse-lite": "caniuse-lite@1.0.30001747",
+          "caniuse-lite": "caniuse-lite@1.0.30001748",
           "lodash.memoize": "lodash.memoize@4.1.2",
           "lodash.uniq": "lodash.uniq@4.5.0"
         }
       },
-      "caniuse-lite@1.0.30001747": {
-        "integrity": "sha512-mzFa2DGIhuc5490Nd/G31xN1pnBnYMadtkyTjefPI7wzypqgCEpeWu9bJr0OnDsyKrW75zA9ZAt7pbQFmwLsQg==",
+      "caniuse-lite@1.0.30001748": {
+        "integrity": "sha512-5P5UgAr0+aBmNiplks08JLw+AW/XG/SurlgZLgB1dDLfAw7EfRGxIwzPHxdSCGY/BTKDqIVyJL87cCN6s0ZR0w==",
         "dependencies": {}
       },
       "chokidar@3.6.0": {
@@ -947,8 +947,8 @@
         "integrity": "sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==",
         "dependencies": {}
       },
-      "electron-to-chromium@1.5.230": {
-        "integrity": "sha512-A6A6Fd3+gMdaed9wX83CvHYJb4UuapPD5X5SLq72VZJzxHSY0/LUweGXRWmQlh2ln7KV7iw7jnwXK7dlPoOnHQ==",
+      "electron-to-chromium@1.5.231": {
+        "integrity": "sha512-cyl6vqZGkEBnz/PmvFHn/u9G/hbo+FF2CNAOXriG87QOeLsUdifCZ9UbHNscE9wGdrC8XstNMli0CbQnZQ+fkA==",
         "dependencies": {}
       },
       "emoji-regex@8.0.0": {
